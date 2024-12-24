@@ -1,0 +1,95 @@
+.dz-box{
+	transition: 0.5s;
+	&.style-1{
+		height:360px;
+		max-height:360px;
+		.dz-media{
+			height:100%;
+			img{
+				height:100%;
+				object-fit: cover;
+			}	
+		}
+	}
+	.view-btn {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 1;
+		transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transition: background 0.5s ease;
+		-moz-transition: background 0.5s ease;
+		-webkit-transition: background 0.5s ease;
+		-ms-transition: background 0.5s ease;
+		-o-transition: background 0.5s ease;
+		transition-delay: 0.5s;
+		-moz-transition-delay: 0.5s;
+		-ms-transition-delay: 0.5s;
+		-o-transition-delay: 0.5s;
+		-webkit-transition-delay: 0.5s;
+		overflow: hidden; 
+		&:after,
+		&:before{
+			content: "";
+			position: absolute;
+			-webkit-transition: all 0.8s;
+			-ms-transition: all 0.8s;
+			transition: all 0.8s;
+			background:var(--secondary);
+			opacity: 0; 
+		}
+		&:after{
+			height: 3px;
+			width: 18px;
+			top: 50%;
+			left: 50%;
+			border-radius:1px;
+			transform: translate(-500px, 50%);
+			-moz-transform: translate(-500px, 50%);
+			-webkit-transform: translate(-500px, 50%);
+			-ms-transform: translate(-500px, 50%);
+			-o-transform: translate(-500px, 50%);
+		}
+		&:before{
+			height: 18px;
+			width: 3px;
+			border-radius:1px;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -500px);
+			-moz-transform: translate(-50%, -500px);
+			-webkit-transform: translate(-50%, -500px);
+			-ms-transform: translate(-50%, -500px);
+			-o-transform: translate(-50%, -500px);
+		}
+	}
+	&:hover{
+		transform: scale(1.05);
+		-moz-transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		-o-transform: scale(1.05);
+		z-index: 1;
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+		.view-btn {
+			background:#fff;
+			transition-delay: 0s; 
+			&:before,
+			&:after{
+				transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+				-webkit-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				-o-transform: translate(-50%, -50%);
+				opacity: 1; 
+			}
+		}
+		
+	}
+}

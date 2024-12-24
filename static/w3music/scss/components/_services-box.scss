@@ -1,0 +1,225 @@
+.dz-services-box-one {
+    padding: 34px 0px;
+    text-align: center;
+    min-height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s;
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+	border-left: 2px solid var(--secondary);
+    border-top: 2px solid var(--secondary);
+    border-bottom: 2px solid var(--secondary);
+	&:nth-child(4){
+		border-right: 2px solid var(--secondary);
+	}
+	@include respond('tab-port'){
+	    min-height: 100%;
+		display: block;
+		border-left: 0;
+		padding: 15px 0;
+		border-left: 2px solid var(--secondary);
+		border-right: 2px solid var(--secondary);
+		border-top: 0;
+		&:nth-child(1){
+			border-top: 2px solid var(--secondary);
+		}
+	}
+	.serial-no {
+		font-size: 35px;
+		font-weight: 500;
+		text-align: center;
+		font-family: 'Poppins', sans-serif!important;
+		color: #2D2C2C;
+		margin-bottom: auto;
+		@include respond('phone'){
+			font-size:20px;
+		}
+	}
+	.services-title {
+		writing-mode: vertical-rl;
+		transform: rotate(180deg);
+		@include respond('tab-port'){
+			writing-mode:unset;
+			transform: rotate(0deg);
+		}	
+	}	
+}
+.services-box-two-inner {
+    display: flex;
+	@include respond('phone'){
+		display:block;
+	}
+}
+.services-details-1 {
+    align-self: center;
+    margin: 0 20px 0 0;
+	@include respond('phone'){
+		margin:0 0 20px 0;
+	}
+}
+.services-inner {
+    display: flex;
+	padding:0;
+	@include respond('tab-port'){
+		display:block;
+	}
+}
+.services-inner {
+	.dz-services-box{
+		display: flex;
+		position: relative;
+		flex: 1;
+		transition: all 0.5s;
+			&.active {
+				flex: 8;
+				@include respond('tab-port'){
+					max-height:450px;
+					height:450px;
+				}
+				@include respond('phone'){
+					max-height:700px;
+					height:700px;
+				}
+			}
+	}
+}
+.services-box-two {
+    padding: 30px 30px 30px 50px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    transition-delay: 0.15s;
+    display: flex;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+	@include respond('phone'){
+		padding:20px;
+	}
+	.serial-no{
+		background: var(--gradient);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 85px;
+		font-weight: 600;
+		margin-bottom: 20px;
+		display: block;
+		line-height: 1;
+		@include respond('tab-port'){
+			font-size:60px;	
+		}
+		@include respond('phone'){
+			font-size:36px;
+		}
+	}
+	.dz-meta{
+		ul{
+			li a{
+				font-size: 16px;
+				font-weight: 400;
+				color: var(--title);
+			}
+
+		}
+	}
+
+	.services-title{
+		font-size: 30px;
+		font-weight: 600;
+		@include respond('tab-port'){
+			font-size:26px;
+		}
+		@include respond('phone'){
+			font-size:22px;
+		}
+	}
+	.text{
+		margin-bottom:50px;
+		@include respond('tab-port'){
+			margin-bottom:15px;
+		}
+	}
+}
+.dz-services-box.active .services-box-two {
+	opacity: 1;
+    visibility: visible;
+}
+.services-inner .dz-services-box{
+	.services-box-two {
+		border-left: 2px solid var(--secondary);
+		border-top: 2px solid var(--secondary);
+		border-bottom: 2px solid var(--secondary);
+		@include respond('tab-port'){
+		    border-right: 2px solid var(--secondary);
+			border-bottom: 2px solid var(--secondary);
+			border-top: 2px solid var(--secondary);
+		}
+	}
+	&:last-child{
+		.dz-services-box-one,
+		.services-box-two {
+			border-right: 2px solid var(--secondary);
+		}
+	}
+}
+.dz-services-box.active .dz-services-box-one {
+    opacity: 0;
+    visibility: hidden;
+}
+.services-details-2 {
+    width: 100%;
+	.dz-media{
+		width:100%;
+		height:100%;
+		img{
+			width:100%;
+			height:100%;
+			object-fit: cover;
+		}
+		@include respond('phone'){
+			height:350px;
+		}
+	}
+}
+
+.service-detail{
+	&.style-1{
+		padding:30px;
+		background:#F4F4F4;
+		position: relative;
+		.dz-title{
+			font-size: 20px;
+			font-weight: 600;
+		}
+		p{
+			margin-bottom: 25px;
+		}
+
+		.number,
+		.infogmail{
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			font-size: 14px;
+			margin-bottom: 10px;
+			strong{
+				font-weight: 600;
+				color: var(--title);
+				i{
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}

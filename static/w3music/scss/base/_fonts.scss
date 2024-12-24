@@ -1,0 +1,58 @@
+// Google Font
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Noto+Sans', sans-serif;
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+// Line Awesome
+@import url("../icons/line-awesome/css/line-awesome.min.css");
+@import url('../icons/font-awesome/css/all.min.css');
+@import url('../icons/themify/themify-icons.css');
+@import url('../icons/flaticon/flaticon_w3music.css');
+@import url('../icons/feather/css/iconfont.css');
+
+
+// Font face rule (defining the custom font family)
+@font-face {
+	font-family: "mariyam";
+	src: url("../fonts/mariyam/mariyam.otf") format("truetype");
+}
+@font-face {
+	font-family: "mariyam";
+	src: url("../fonts/mariyam/mariyam.ttf") format("truetype");
+}
+
+
+// Font face rule (defining the custom font family)font-family:
+
+
+@font-face {
+	font-family: "Tomato Grotesk";
+	src: url("../fonts/tomato_grotesk/TomatoGrotesk-Black.otf") format("truetype");
+	font-weight: 900;
+}
+@font-face {
+	font-family: "Tomato Grotesk";
+	src: url("../fonts/tomato_grotesk/TomatoGrotesk-Bold.otf") format("truetype");
+	font-weight: bold;
+}
+@font-face {
+	font-family: "Tomato Grotesk";
+	src: url("../fonts/tomato_grotesk/TomatoGrotesk-Medium.otf") format("truetype");
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Tomato Grotesk";
+	src: url("../fonts/tomato_grotesk/TomatoGrotesk-Regular.otf") format("truetype");
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Tomato Grotesk";
+	src: url("../fonts/tomato_grotesk/TomatoGrotesk-Light.otf") format("truetype");
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Tomato Grotesk";
+	src: url("../fonts/tomato_grotesk/TomatoGrotesk-Thin.otf") format("truetype");
+	font-weight: 100;
+}

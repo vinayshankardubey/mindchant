@@ -1,0 +1,348 @@
+.main-bnr-three{
+	position:relative;
+  	align-items: center;
+	z-index:1;
+	overflow: hidden;
+	
+	.banner-inner {
+		position:relative;
+		z-index:1;
+		background-color:#fff;
+		height: 900px;
+		padding-top:30px;
+		@include respond('tab-land'){
+			height:800px;
+		}
+		@include respond('tab-port'){
+			height:100%;
+			padding-bottom: 30px;			
+		}
+		.animation-btn {
+			position: absolute;
+			top: 3rem;
+			left: 7rem;
+			animation: rotate-360 20s infinite linear;
+			img{
+				width:185px;
+			}
+			@include respond('laptop'){
+				top:2rem;
+				left:2rem;
+				img{
+					width: 120px;
+				}
+			}
+			@include respond('tab-land'){
+				display:none;
+			}
+		}
+		&::before {
+			position: absolute;
+			z-index: 0;
+			content: "";
+			height: 385px;
+			max-height: 385px;
+			width: 100%;
+			bottom: 0;
+			right: 0;
+			background-size: cover;
+			background-image: url(../images/main-slider/slider3/shap.jpg);
+			@include respond('tab-land'){
+				height:50%;
+			}
+			@include respond('phone-land'){
+				height:35%;
+			}
+		}
+		.dz-features-wrapper{
+			position:absolute;
+			bottom:0;
+		}
+		.social-post{
+			li {
+				font-size: 18px;
+				font-weight: 500;
+				writing-mode: tb-rl;
+				transform: rotate(180deg);
+				position: absolute;
+				animation: key1 .7s ease infinite alternate;
+				left: 40px;
+				top: 35%;
+			}
+			@include respond('tab-land'){
+				display:none;
+			}
+		}
+		
+		.banner-content{
+			position: relative;
+			z-index: 1;
+			padding-top:60px;
+				@include respond('tab-land'){
+					padding-top:60px;
+				}
+				@include respond('tab-port'){
+					padding-top:0px;
+				}
+			.sub-title{
+			    font-weight: 500;
+				font-size: 35px;
+				line-height: 1.2;
+				color: #fff;
+				width: 70%;
+				@include respond('tab-port'){
+					color:var(--title);
+					width: 100%;
+				}
+			}
+			h1{
+				font-style: normal;
+				font-weight: 700;
+				font-size: 64px;
+				line-height: 1.1;
+				margin-bottom: 10px;
+			}
+			p{
+				font-size: 16px;
+				line-height: 28px;
+				max-width:522px;
+				margin-bottom:30px;
+			}
+			.banner-btn{
+				margin-bottom:50px;
+				display:flex;
+				align-items:center;
+				gap: 30px;
+				@include respond('tab-land'){
+					gap:20px;
+				}
+				@include respond('tab-port'){
+					margin-bottom:30px;
+				}
+			}	
+			@include respond('tab-land'){
+				h1{
+					font-size: 45px;
+				}
+				p{
+					font-size:16px;
+					line-height:24px;
+				}
+			}
+			@include respond('tab-port'){
+				h1{
+					font-size: 42px;
+				}
+			}
+			@include respond('phone'){
+				h1{
+					font-size: 30px;
+				}
+				p{
+					width:100%;
+					margin-bottom:15px;
+				}
+				.banner-btn{
+					margin: 10px 0;
+					display:block;
+				}
+				.sub-title{
+					font-size:24px;
+				}
+			}
+			&.bottom-content{
+				padding-top:50px;
+				@include respond('tab-port'){
+					padding-top: 0px;
+
+				}
+			}
+		}
+		.banner-media{
+			position: relative;
+			min-width: 50vw;
+			height: 100%;
+			float: left;
+		}
+		.item-media{
+			position: absolute;
+			bottom: 50px;
+			margin-left: -50px;
+			width: 53vw;
+			
+			img:not(.crown){
+			    width: 100%;
+			}
+		}
+		.item-bg{
+			position: relative;
+			width: 50vw;
+			object-fit:cover;
+			min-height: 690px;
+			@include respond('laptop'){
+				height:85vh;
+			}
+		}
+		.crown{
+			position: absolute;
+			left: 18%;
+			top: -12%;
+			width: 80%;
+		}
+		.offer{
+			position: absolute;
+			top: -120px;
+			right: 120px;
+			width: auto !important;
+		}
+		@include respond('wide-desktop'){
+			.offer{
+				top: -100px;
+				right: 50px;
+			}
+			.item-media{
+				bottom: 20px;
+				margin-left: -30px;
+			}
+		}
+		@include respond('tab-land'){
+			.crown,
+			.offer{
+				display: none;
+			}
+			.primary-box{
+				display:none;
+			}
+			.banner-media{
+				width:55vw;
+			}
+			.item-bg{
+				width: 100%;
+				height: 100%;
+				min-height: 100%;
+			}
+		}
+		@include custommq ($max: 1024px) {
+			.banner-media{
+				width: 60vw;
+			}
+			.item-media{
+				margin-left: 0;
+				left: -60px;
+				bottom: 50px;
+			}
+		}
+		@include respond('tab-port'){
+			.banner-media {
+				transform: unset;
+				width: 100%;
+				min-width: 100%;
+				margin-bottom: 30px;
+			}
+			.item-media{
+				position: static;
+			}
+			.item-bg{
+				width:100%;
+				height:100%;
+				min-height:100%;
+			}
+		}
+		
+		@include respond('phone-land'){
+			padding: 80px 0 30px;
+
+			.banner-media{
+				width:100%;
+			}
+			.item-media{
+				position: initial;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 30px;
+				width: 100%;
+				
+				img{
+					width:100%;
+					height:auto;
+				}
+			}
+		}
+		@include respond('phone'){
+			padding:40px 0 30px;
+		}
+	}
+	
+}
+
+.main-thumb2-area{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	position: relative;
+	bottom: -130px;
+	left: 0;
+	.food-card{
+		@include transitionSlow;
+		.icon{
+			@include transitionSlow;
+			width:78px;
+			min-width:78px;
+			height:78px;
+			line-height:78px;
+			border-radius:var(--border-radius-base);
+			background:var(--rgba-primary-1);
+			color:var(--primary);
+			text-align:center;
+			i{
+				font-size:45px;
+			}
+		}
+		&:hover{
+			.icon{
+				background:var(--primary);
+				color:#fff;
+			}
+		}
+	}
+	@include respond('wide-desktop'){
+		bottom: -80px;
+	}
+	@include respond('tab-land'){
+		bottom: -95px;
+	}
+	@include respond('tab-land'){
+		display:none;
+	}
+}
+
+@media only screen and (min-width: 1281px){
+	.boxed{
+		.main-bnr-two .banner-inner .item-media {
+			width: 48vw;
+		}
+	}
+}
+@media only screen and (min-width: 1481px){
+	.boxed{
+		.main-bnr-two .banner-inner .item-media {
+			width: 44vw;
+		}
+	}
+}
+@media only screen and (min-width: 1681px){
+	.boxed{
+		.main-bnr-two .banner-inner{
+			.item-bg{
+				width: 45vw;
+			}
+			.item-media{
+				width: 40vw;
+			}
+			.offer{
+				top: -150px;
+				right: 100px;
+			}
+		}
+	}
+}

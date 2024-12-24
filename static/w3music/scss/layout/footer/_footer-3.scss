@@ -1,0 +1,141 @@
+// ft-clients
+.site-footer{
+	&.style-3{
+		position: relative;
+		z-index: 2;
+		.footer-top{
+			padding-bottom: 40px;
+			padding-top: 70px;
+			position: unset;
+			@include respond('tab-port'){
+				padding-bottom:40px;
+			}
+			@include respond('phone-land'){
+				text-align: center;
+				padding-bottom: 25px;
+			}
+		}
+		.footer-subtitle{
+			color: #FFF;
+			font-size: 20px;
+			font-weight: 600;
+			text-transform: capitalize;
+			margin-bottom:25px;
+		}
+		.footer-title{
+			color: #FFF;
+			font-size: 22px;
+			font-weight: 500;
+			line-height: 1.2;
+			margin-bottom: 40px;
+			@include respond('phone-land'){
+				margin-bottom: 20px;
+			}
+			span{
+				background: var(--gradient);
+				@include backgroundtext;
+			}
+		}
+		.dz-box{
+			.title{
+				font-size:16px;
+				font-weight:500;
+			}
+		}
+		.text{
+			color: #FFF;
+			font-size: 15px;
+			font-weight: 300;
+			span{
+				display: block;
+			}
+			@include respond('phone-land'){
+				margin:auto;
+			}
+			@include respond('phone'){
+				width:100%;
+			}
+		}
+		.infogmail,
+		.number{
+			a{
+				font-size: 16px;
+				font-weight: 300;
+				color: #fff;
+				display: block;
+			}
+		}
+		.infogmail a{
+			border-bottom: 2px solid #fff;
+			width: fit-content;
+			margin-bottom: 5px;
+			padding-bottom: 5px;
+			text-transform: lowercase;
+
+			@include custommq($max: 767px) {
+				text-align:center;
+				display: block	;
+				margin: auto;
+			}
+		}
+		.footer-menu{
+			ul{
+				li{
+					margin-right: 60px;
+					display: inline-block;
+					border-bottom:1px solid transparent;
+					@include transitionMedium;
+					margin-bottom: 5px;
+					&.active,
+					&:hover{
+						border-bottom:1px solid #fff;
+						letter-spacing: 1.5px;
+					}
+					a{
+						color: #fff;
+						font-family: var(--font-family-standard);
+						font-size: 16px;
+						font-weight: 400;
+					}
+					@include respond('tab-port'){
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+		.footer-bottom {
+			border-top: 1px solid rgba(129, 129, 129,0.4);
+			.text > a,
+			.text,
+			.copyright-text > a,
+			.copyright-text {
+				color: #D4D4D4;
+			    font-family: var(--font-family-standard);
+				font-size: 16px;
+				font-weight: 500;
+			}
+			.copyright-text > a{
+				background: var(--gradient);
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+		.dz-social-icon{
+			ul > li{
+				margin: 0 15px;
+				a{
+					color:#fff;	
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,365 @@
+{% extends 'w3music/elements/layouts/layout.html' %}
+{% load static %}
+        
+{% block additional_css %}
+{% endblock %}
+		
+{% block content %}
+        <section class="content-inner-2">
+            <div class="container">
+                <div class="row justify-content-between align-items-end">
+                    <div class="text-center text-xl-start col-xl-6">
+                        <div class="section-head">
+                            <h3 class="sub-title wow flipInX" data-wow-delay="0.2s">Recent Events</h3>
+                            <h2 class="title wow flipInX" data-wow-delay="0.4s">Melodic Events on the Horizon</h2>
+                        </div>
+                    </div>
+                    <div class="text-center text-xl-start col-xl-6 m-b30 m-lg-b40">
+                        <p class="text m-lg-b15 wow flipInX show" data-wow-delay="0.6s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                        <a href="{% url 'w3music:blog-standard' %}" class="btn-link btn-gradient wow flipInX" data-wow-delay="0.8s">VIEW ALL TOUR</a>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="dz-card style-2 blog-half overlay-shine dz-img-effect zoom m-b30 wow flipInX" data-wow-delay="1s">
+                            <div class="dz-media">
+                                <a href="{% url 'w3music:blog-standard' %}"><img src="{% static 'w3music/images/blog/grid5/pic1.jpg' %}" alt="/"></a>
+                                <div class="dz-date">19 <span>JAN</span></div>
+                            </div>
+                            <div class="dz-info bg-gray">
+                                <h6 class="dz-subtitle"><a href="{% url 'w3music:blog-standard' %}">New York, Music Event</a></h6>
+                                <h5 class="dz-title"><a href="{% url 'w3music:blog-standard' %}">Wonderland Beats Festival Graham</a></h5>
+                                <div class="read-btn">
+                                    <a href="{% url 'w3music:blog-standard' %}" class="btn-link">Read More<i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="dz-card style-2 blog-half overlay-shine dz-img-effect zoom m-b30 wow flipInX" data-wow-delay="1.2s">
+                            <div class="dz-media">
+                                <a href="{% url 'w3music:blog-standard' %}"><img src="{% static 'w3music/images/blog/grid5/pic2.jpg' %}" alt="/"></a>
+                                <div class="dz-date">15 <span>Aug</span></div>
+                            </div>
+                            <div class="dz-info bg-gray">
+                                <h6 class="dz-subtitle"><a href="{% url 'w3music:blog-standard' %}">New York, Music Event</a></h6>
+                                <h5 class="dz-title"><a href="{% url 'w3music:blog-standard' %}">Archieving Results in Music Events</a></h5>
+                                <div class="read-btn">
+                                    <a href="{% url 'w3music:blog-standard' %}" class="btn-link">Read More<i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="dz-card style-2 blog-half overlay-shine dz-img-effect zoom m-b30 wow flipInX" data-wow-delay="1.4s">
+                            <div class="dz-media">
+                                <a href="{% url 'w3music:blog-standard' %}"><img src="{% static 'w3music/images/blog/grid5/pic3.jpg' %}" alt="/"></a>
+                                <div class="dz-date">21 <span>Sep</span></div>
+                            </div>
+                            <div class="dz-info bg-gray">
+                                <h6 class="dz-subtitle"><a href="{% url 'w3music:blog-standard' %}">New York, Music Event</a></h6>
+                                <h5 class="dz-title"><a href="{% url 'w3music:blog-standard' %}">Why do people hate pop music so much?</a></h5>
+                                <div class="read-btn">
+                                    <a href="{% url 'w3music:blog-standard' %}" class="btn-link">Read More<i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="dz-card style-2 blog-half overlay-shine dz-img-effect zoom m-b30 wow flipInX" data-wow-delay="1.6s">
+                            <div class="dz-media">
+                                <a href="{% url 'w3music:blog-standard' %}"><img src="{% static 'w3music/images/blog/grid5/pic4.jpg' %}" alt="/"></a>
+                                <div class="dz-date">16 <span>JAN</span></div>
+                            </div>
+                            <div class="dz-info bg-gray">
+                                <h6 class="dz-subtitle"><a href="{% url 'w3music:blog-standard' %}">New York, Music Event</a></h6>
+                                <h5 class="dz-title"><a href="{% url 'w3music:blog-standard' %}">Music's Role in Shaping Our Lives</a></h5>
+                                <div class="read-btn">
+                                    <a href="{% url 'w3music:blog-standard' %}" class="btn-link">Read More<i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-inner-2">
+            <div class="container">
+                <div class="row justify-content-between align-items-end">
+                    <div class="text-center text-xl-start col-xl-7">
+                        <div class="section-head ">
+                            <h3 class="sub-title wow flipInX" data-wow-delay="0.2s">Upcoming Events</h3>
+                            <h2 class="title wow flipInX w-100" data-wow-delay="0.4s">Exciting Upcoming Projects on the Musical Horizon</h2>
+                        </div>
+                    </div>
+                    <div class="text-center text-xl-start col-xl-5 m-b30 m-lg-b40">
+                        <p class="text m-lg-b15 wow flipInX show" data-wow-delay="0.6s">No More Endlessly Listening To One Person’s Favorite Songs Over And Over. Hang The DJ Is a Collaborative Playlist That,</p>
+                        <a href="{% url 'w3music:events-detail' %}" class="btn-link btn-gradient wow flipInX" data-wow-delay="0.8s">VIEW ALL EVENTS</a>
+                    </div>
+                </div>
+                
+                <div class="section-content m-b30 row">
+                    <div class="services-inner">
+                        <div class="dz-services-box active wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="dz-services-box-one">
+                                <div class="serial-no">01</div>
+                                <div class="services-title"><h5>Upcoming Music</h5></div>
+                            </div>	
+                            <div class="services-box-two">
+                                <div class="services-box-two-inner">
+                                    <div class="services-details-1">
+                                        <div class="dz-services-details">
+                                            <span class="serial-no">01</span>
+                                            <div class="dz-meta">
+                                                <ul>
+                                                    <li><a href="javascript:void(0);">By: Lother Leaxe,</a></li>
+                                                    <li class="dz-comment"><a href="javascript:void(0);">New York</a></li>
+                                                </ul>
+                                            </div>
+                                            <h3 class="services-title">Upcoming Events for Music, Film, and Art Lovers</h3>
+                                            <p class="text">Velit egestas dui id ornare arcu. Nibh sit amet commodo nulla nullam vehicula. Arcu dictum varius duis at consectetur. Faucibus</p>
+                                            <a href="{% url 'w3music:contact-us' %}" class="btn btn-dark shadow-dark btn-hover-1"><span class="btn-text" data-text="DISCOVER MORE">DISCOVER MORE</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="services-details-2">
+                                        <div class="dz-media">
+                                            <img src="{% static 'w3music/images/about/pic7.jpg' %}" alt="/">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dz-services-box wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="dz-services-box-one">
+                                <div class="serial-no">02</div>
+                                <div class="services-title"><h5>Music Store</h5></div>
+                            </div>	
+                            <div class="services-box-two">
+                                <div class="services-box-two-inner">
+                                    <div class="services-details-1">
+                                        <div class="dz-services-details">
+                                            <span class="serial-no">02</span>
+                                            <div class="dz-meta">
+                                                <ul>
+                                                    <li><a href="javascript:void(0);">By: Lother Leaxe,</a></li>
+                                                    <li class="dz-comment"><a href="javascript:void(0);">New York</a></li>
+                                                </ul>
+                                            </div>
+                                            <h3 class="services-title">Upcoming Events for Music, Film, and Art Lovers</h3>
+                                            <p class="text">Velit egestas dui id ornare arcu. Nibh sit amet commodo nulla nullam vehicula. Arcu dictum varius duis at consectetur. Faucibus</p>
+                                            <a href="{% url 'w3music:contact-us' %}" class="btn btn-dark shadow-dark btn-hover-1"><span class="btn-text" data-text="DISCOVER MORE">DISCOVER MORE</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="services-details-2">
+                                        <div class="dz-media">
+                                            <img src="{% static 'w3music/images/about/pic7.jpg' %}" alt="/">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dz-services-box wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="dz-services-box-one">
+                                <div class="serial-no">03</div>
+                                <div class="services-title"><h5>Sound Cloud</h5></div>
+                            </div>	
+                            <div class="services-box-two">
+                                <div class="services-box-two-inner">
+                                    <div class="services-details-1">
+                                        <div class="dz-services-details">
+                                            <span class="serial-no">03</span>
+                                            <div class="dz-meta">
+                                                <ul>
+                                                    <li><a href="javascript:void(0);">By: Lother Leaxe,</a></li>
+                                                    <li class="dz-comment"><a href="javascript:void(0);">New York</a></li>
+                                                </ul>
+                                            </div>
+                                            <h3 class="services-title">Upcoming Events for Music, Film, and Art Lovers</h3>
+                                            <p class="text">Velit egestas dui id ornare arcu. Nibh sit amet commodo nulla nullam vehicula. Arcu dictum varius duis at consectetur. Faucibus</p>
+                                            <a href="{% url 'w3music:contact-us' %}" class="btn btn-dark shadow-dark btn-hover-1"><span class="btn-text" data-text="DISCOVER MORE">DISCOVER MORE</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="services-details-2">
+                                        <div class="dz-media">
+                                            <img src="{% static 'w3music/images/about/pic7.jpg' %}" alt="/">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dz-services-box wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="dz-services-box-one">
+                                <div class="serial-no">04</div>
+                                <div class="services-title"><h5>Live Stream</h5></div>
+                            </div>	
+                            <div class="services-box-two">
+                                <div class="services-box-two-inner">
+                                    <div class="services-details-1">
+                                        <div class="dz-services-details">
+                                            <span class="serial-no">04</span>
+                                            <div class="dz-meta">
+                                                <ul>
+                                                    <li><a href="javascript:void(0);">By: Lother Leaxe,</a></li>
+                                                    <li class="dz-comment"><a href="javascript:void(0);">New York</a></li>
+                                                </ul>
+                                            </div>
+                                            <h3 class="services-title">Upcoming Events for Music, Film, and Art Lovers</h3>
+                                            <p class="text">Velit egestas dui id ornare arcu. Nibh sit amet commodo nulla nullam vehicula. Arcu dictum varius duis at consectetur. Faucibus</p>
+                                            <a href="{% url 'w3music:contact-us' %}" class="btn btn-dark shadow-dark btn-hover-1"><span class="btn-text" data-text="DISCOVER MORE">DISCOVER MORE</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="services-details-2">
+                                        <div class="dz-media">
+                                            <img src="{% static 'w3music/images/about/pic7.jpg' %}" alt="/">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>	
+                </div>
+            </div>		
+        </section>		
+
+        <section class="content-inner-1">
+            <div class="container">
+                <div class="row justify-content-between align-items-end">
+                    <div class="text-center text-xl-start col-xl-6">
+                        <div class="section-head ">
+                            <span class="sub-title wow flipInX" data-wow-delay="0.2s">Events</span>
+                            <h2 class="title wow flipInX" data-wow-delay="0.4s">Upcoming Concerts</h2>
+                        </div>
+                    </div>
+                    <div class="text-center text-xl-end col-xl-6 m-b30 m-lg-b40">
+                        <a href="{% url 'w3music:events-table' %}" class="btn-link btn-gradient wow flipInX" data-wow-delay="0.6s">VIEW ALL TOUR</a>
+                    </div>
+                </div>
+
+                <div class="row dz-tooltip-blog wow fadeInUp " data-wow-delay="0.8s">
+                    <div class="col-12">
+                        <div class="dz-card style-4 image-tooltip-effect" data-url="{% static 'w3music/images/blog/grid3/pic1.jpg' %}">
+                            <div class="row dz-info justify-content-between">
+                                <div class="col-lg-2">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">17:00 - 18:00</a></h5>
+                                    <span class="small-title">pm</span>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">Finding Serenity in Nature</a></h5>
+                                </div>
+                                <div class="col-lg-2">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">lother leaxe</a></h5>
+                                    <span class="small-title">Music Director</span>
+                                </div>
+                                <div class="col-lg-2">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">Dallas</a></h5>
+                                    <span class="small-title">Black Rock Club</span>
+                                </div>
+                                <div class="col-lg-1">
+                                    <a href="{% url 'w3music:blog-details' %}" class="btn-link text-secondary"><i class="la la-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="dz-card style-4 image-tooltip-effect" data-url="{% static 'w3music/images/blog/grid3/pic2.jpg' %}">
+                            <div class="row  dz-info justify-content-between">
+                                <div class="col-lg-2">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">18:00 - 19:00</a></h5>
+                                    <span class="small-title">pm</span>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">the Power of Movement</a></h5>
+                                </div>
+                                <div class="col-lg-2">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">lother leaxe</a></h5>
+                                    <span class="small-title">Music Director</span>
+                                </div>
+                                <div class="col-lg-2">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">USA</a></h5>
+                                    <span class="small-title">Musical Merriments</span>
+                                </div>
+                                <div class="col-lg-1">
+                                    <a href="{% url 'w3music:blog-details' %}" class="btn-link text-secondary"><i class="la la-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="dz-card style-4 image-tooltip-effect" data-url="{% static 'w3music/images/blog/grid3/pic3.jpg' %}">
+                            <div class="row dz-info justify-content-between">
+                                <div class="col-lg-2">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">20:00 - 21:00</a></h5>
+                                    <span class="small-title">pm</span>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">the Gastronomic Adventure</a></h5>
+                                </div>
+                                <div class="col-lg-2">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">lother leaxe</a></h5>
+                                    <span class="small-title">Music Director</span>
+                                </div>
+                                <div class="col-lg-2">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">New York</a></h5>
+                                    <span class="small-title">Musical Merriments</span>
+                                </div>
+                                <div class="col-lg-1">
+                                    <a href="{% url 'w3music:blog-details' %}" class="btn-link text-secondary"><i class="la la-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="dz-card style-4 image-tooltip-effect" data-url="{% static 'w3music/images/blog/grid3/pic4.jpg' %}">
+                            <div class="row dz-info justify-content-between">
+                                <div class="col-lg-2">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">22:00 - 23:00</a></h5>
+                                    <span class="small-title">pm</span>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">Evening Of Laughter</a></h5>
+                                </div>
+                                <div class="col-lg-2">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">lother leaxe</a></h5>
+                                    <span class="small-title">Music Director</span>
+                                </div>
+                                <div class="col-lg-2">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">New York</a></h5>
+                                    <span class="small-title">Musical Merriments</span>
+                                </div>
+                                <div class="col-lg-1">
+                                    <a href="{% url 'w3music:blog-details' %}" class="btn-link text-secondary"><i class="la la-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="dz-card style-4 image-tooltip-effect" data-url="{% static 'w3music/images/blog/grid3/pic5.jpg' %}">
+                            <div class="row  dz-info justify-content-between">
+                                <div class="col-lg-2">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">24:00 - 1:00</a></h5>
+                                    <span class="small-title">pm</span>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">Intimate Music Experience</a></h5>
+                                </div>
+                                <div class="col-lg-2">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">lother leaxe</a></h5>
+                                    <span class="small-title">Music Director</span>
+                                </div>
+                                <div class="col-lg-2">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">New York</a></h5>
+                                    <span class="small-title">Musical Merriments</span>
+                                </div>
+                                <div class="col-lg-1">
+                                    <a href="{% url 'w3music:blog-details' %}" class="btn-link text-secondary"><i class="la la-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>	
+{% endblock %}

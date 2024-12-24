@@ -1,0 +1,104 @@
+.dz-card{
+	&.style-4{
+		padding: 23px 0;
+        border-bottom: 1px solid #B3B3B3;
+        position: relative;
+        @include transitionMedium;
+		background-color: transparent;
+		width: 100%;
+		@include respond('tab-port'){
+			padding-top: 30px;
+			padding-bottom: 15px;
+		}
+		
+        .dz-media{
+            display: none;
+        }
+		.dz-info{
+			padding: 0;
+		}
+		.post-date{
+            font-size: 50px;
+			color: var(--title);
+			font-weight: 700;
+            line-height: 1.2;
+			display: block;
+			
+			span{
+				font-size: 16px;
+				color: var(--secondary);
+				font-weight: 500;
+            }
+        }     
+        .dz-title{
+			margin: 0;
+			font-size: 18px;
+			font-weight: 500;
+			text-transform: capitalize;
+        }
+		.small-title{
+			color: #666;
+			font-size: 14px;
+			font-weight: 400;
+			text-transform: capitalize;
+		}
+        p{
+            font-weight: 300;
+            margin-bottom: 0;
+            padding-left: 30px;
+			padding-right: 30px;
+        }
+		.btn-link{
+		    float: right;
+			font-size: 24px;
+		}
+        &:hover{
+            display: inline-block;
+		}
+        @include respond('tab-port'){
+            .post-date{
+                margin-bottom: 10px !important;
+            }
+            .dz-title{
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 14px;
+				padding: 0;
+            }
+			.btn-link{
+				float: unset;
+				margin-top: 10px;
+				display: inline-block;
+			}
+        }
+		@include respond('phone'){
+			padding-top: 10px;
+			padding-bottom: 5px;
+		} 
+	}
+}
+.image-tooltip-effect{
+	position: relative;
+}
+.image-tooltip{
+	position: absolute;
+	opacity: 1;
+	overflow: hidden;
+	z-index: 8;
+	
+	img{	
+		scale: 1.2;
+		object-fit: cover;
+		opacity: 0;
+		pointer-events: none;
+		transition:  0.5s ease-in-out !important;
+	}
+}
+.dz-tooltip-blog{
+	& > div:first-child{
+		.dz-card{
+			border-top: 1px solid #222;
+		}
+	}
+}

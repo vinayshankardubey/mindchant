@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- PAGE TITLE HERE -->
+	<title>{{ dz_array.public.title }}</title>
+
+	<!-- Meta -->
+	{% load static custom_tags %}
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="DexignZone">
+	<meta name="robots" content="">
+	<meta name="keywords" content="{{ dz_array.public.keywords }}">
+	<meta name="description" content="{{ dz_array.public.description }}">
+	<meta property="og:title" content="{{ dz_array.public.og_title }}">
+	<meta property="og:description" content="{{ dz_array.public.og_description }}">
+	<meta property="og:image" content="{{ dz_array.public.og_image }}" />
+	<meta name="twitter:title" content="{{ dz_array.public.twitter_title }}">
+	<meta name="twitter:description" content="{{ dz_array.public.twitter_description }}">
+	<meta name="twitter:image" content="{{ dz_array.public.twitter_image }}" />
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="format-detection" content="telephone=no">
+	
+	<!-- Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	    
+	<!-- Favicon icon -->
+	<link rel="shortcut icon" type="image/png" href="{% static dz_array.public.favicon  %}">
+	
+	<!-- Stylesheet -->
+    {% for cssurl in dz_array.pagelevel.w3music.w3music_views.css|getdata:request.path %}
+    <link rel="stylesheet" href="{% static cssurl %}" >
+	{% endfor %}
+	
+	<!-- Custom Stylesheet -->
+    {% for cssurl in dz_array.global.css %}
+    <link rel="stylesheet" href="{% static cssurl %}">
+	{% endfor %}
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body id="bg">
+    <div id="loading-area" class="loading-page-3">
+        <img src="{% static 'w3music/images/loading.gif' %}" alt="">
+    </div> 
+    <div class="page-wraper">
+    
+        <div class="page-content bg-white">
+            
+            <div class="coming-wrapper overflow-hidden bg-parallax" style="background-image:url('{% static 'w3music/images/background/pic2.jpg' %}');">
+                <div class="container">
+                    <div class="col-lg-12">
+                        <div class="logo-header mostion">
+                            <a href="{% url 'w3music:index' %}" class="logo-white"><img src="{% static 'w3music/images/logo-white.png' %}" alt="/"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="inner-content">
+                                        <span class="coming-para">Our Website is under construction.</span>	
+                                        <h3 class="coming-head">Coming Soon</h3>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="countdown-row">
+                                        <div class="countdown style-2">
+                                            <div class="date box">
+                                                <div class="time lost" id="day">00</div>
+                                                <span class="text">Days</span>
+                                            </div>
+                                            <div class="date">
+                                                <span class="time" id="hour">00</span>
+                                                <span class="text">Hours</span>
+                                            </div>
+                                            <div class="date">
+                                                <span class="time" id="min">00</span>
+                                                <span class="text">Minutes</span>
+                                            </div>
+                                            <div class="date">
+                                                <span class="time" id="second">00</span>
+                                                <span class="text"> Seconds</span>
+                                            </div>
+    
+                                            <ul class="time-line">
+                                                <li class="timeline-badge">
+                                                    <svg width="12" height="364" viewBox="0 0 12 364" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="6" cy="6" r="6" fill="white"/>
+                                                        <circle cx="6" cy="182" r="6" fill="white"/>
+                                                        <circle cx="6" cy="358" r="6" fill="white"/>
+                                                        <circle cx="6" cy="34" r="2" fill="#7E7E7E"/>
+                                                        <circle cx="6" cy="210" r="2" fill="#7E7E7E"/>
+                                                        <circle cx="6" cy="58" r="2" fill="#7E7E7E"/>
+                                                        <circle cx="6" cy="234" r="2" fill="#7E7E7E"/>
+                                                        <circle cx="6" cy="82" r="2" fill="#7E7E7E"/>
+                                                        <circle cx="6" cy="258" r="2" fill="#7E7E7E"/>
+                                                        <circle cx="6" cy="106" r="2" fill="#7E7E7E"/>
+                                                        <circle cx="6" cy="282" r="2" fill="#7E7E7E"/>
+                                                        <circle cx="6" cy="130" r="2" fill="#7E7E7E"/>
+                                                        <circle cx="6" cy="306" r="2" fill="#7E7E7E"/>
+                                                        <circle cx="6" cy="154" r="2" fill="#7E7E7E"/>
+                                                        <circle cx="6" cy="330" r="2" fill="#7E7E7E"/>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>	
+                        </div>	
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between"> 
+                        <ul class="social-post">
+                            <li class="follow"><a href="javascript:void(0)">Follow us & get Update <i class="fa-solid fa-arrow-right"></i></a></li>
+                        </ul>
+                        <div class="middle-content">
+                            <div class="dz-social-icon text-md-end style-1">
+                                <ul>
+                                    <li><a target="_blank" class="text-white" href="https://www.facebook.com/dexignzone/">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a></li>
+                                    <li><a target="_blank" class="text-white" href="https://dribbble.com/">
+                                        <i class="flaticon flaticon-dribble"></i>
+                                    </a></li>
+                                    <li><a target="_blank" class="text-white" href="https://twitter.com/">	
+                                        <i class="fab fa-twitter"></i>
+                                    </a></li>
+                                    <li><a target="_blank" class="text-white" href="https://open.spotify.com/">
+                                        <i class="flaticon flaticon-spotify"></i>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- JAVASCRIPT FILES ========================================= -->
+{% for jsurl in dz_array.global.js.top %}
+<script src="{% static jsurl %}"></script>
+{% endfor %}
+
+{% for jsurl in dz_array.pagelevel.w3music.w3music_views.js|getdata:request.path %}
+<script src="{% static jsurl %}"></script>
+{% endfor %}
+
+{% for jsurl in dz_array.global.js.bottom %}
+<script src="{% static jsurl %}"></script>
+{% endfor %}
+
+{% block additional_js %}
+{% endblock %}
+
+</body>
+</html>

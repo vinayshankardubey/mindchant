@@ -1,0 +1,183 @@
+// video-bx
+.video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	color:#fff;
+	text-align:center;
+	font-size:24px;
+	@include transitionMedium;
+	z-index: 99999;
+	i{
+		width:125px;
+		height:125px;
+		line-height:125px;
+		font-size: 30px;
+		background-color:var(--secondary);
+	}
+	
+	
+	&:before,
+	&:after{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: -1;
+		height: 100%;
+		background: rgba(217, 217, 217, 0.30);
+
+	}
+	&:before {
+		animation: fadeup2 2.5s ease infinite;
+	}
+	&:after {
+		animation: fadeup 2.5s ease infinite;
+	}	
+	i{
+		color:#fff;
+	}
+
+	@include respond ('phone-land'){
+		i{
+			width:80px;
+			height:80px;
+			line-height:80px;
+			font-size:16px;
+		}	
+	}
+	@include respond ('phone'){
+		svg{
+			width:50px;
+			height:50px;
+		}
+	}
+	&.style-1{
+		i{
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		font-size: 18px;
+		}
+	}
+	&.btn-round{
+		i{
+			width: 90px;
+			height: 90px;
+			line-height: 90px;
+			font-size: 18px;
+			border-radius: 50%;
+		}
+		&:before,
+		&:after{
+			border-radius: 50%;	
+		}
+	}
+	&.rounded{
+		i{
+			border-radius:50% !important;
+		}	
+		&:before,
+		&:after{
+			border-radius:50%;
+		}
+	}
+}
+
+@keyframes fadeup {
+	0% {
+		opacity: 0.8;
+		transform: scale(0.9); 
+	}
+	100% {
+		transform: scale(1.5);
+		opacity: 0; 
+	} 
+}
+
+@keyframes fadeup2 {
+	0% {
+		opacity: 0.8;
+		transform: scale(0.9);
+	}
+	100% {
+		transform: scale(2);
+		opacity: 0;
+	} 	
+}
+@keyframes animationSignal1 {
+  /*Video Popup*/
+	0% {
+		opacity: 0.8;
+		transform: scale(0.9);
+		-moz-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-o-transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+	}
+	100% {
+		transform:  scale(1.5);
+		-moz-transform:  scale(1.5);
+		-ms-transform:  scale(1.5);
+		-o-transform:  scale(1.5);
+		-webkit-transform:  scale(1.5);
+		opacity: 0;
+	}
+}
+@-webkit-keyframes animationSignal1 {
+  /*Video Popup*/
+	0% {
+		transform: scale(0.9);
+		-moz-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-o-transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+	}
+	100% {
+		transform:  scale(1.5);
+		-moz-transform:  scale(1.5);
+		-ms-transform:  scale(1.5);
+		-o-transform:  scale(1.5);
+		-webkit-transform:  scale(1.5);
+		opacity: 0;
+	}
+}
+@keyframes animationSignal2 {
+  /*Video Popup*/
+	0% {
+		transform: scale(0.9);
+		-moz-transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-o-transform: scale(0.9);
+	}
+	100% {
+		transform:  scale(1.9);
+		-moz-transform:  scale(1.9);
+		-webkit-transform:  scale(1.9);
+		-ms-transform:  scale(1.9);
+		-o-transform:  scale(1.9);
+		opacity: 0;
+	}
+}
+@-webkit-keyframes animationSignal2 {
+  /*Video Popup*/
+	0% {
+		transform: scale(0.9);
+		-moz-transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-o-transform: scale(0.9);
+	}
+	100% {
+		transform:  scale(1.9);
+		-moz-transform:  scale(1.9);
+		-webkit-transform:  scale(1.9);
+		-ms-transform:  scale(1.9);
+		-o-transform:  scale(1.9);
+		opacity: 0;
+	}
+}
+

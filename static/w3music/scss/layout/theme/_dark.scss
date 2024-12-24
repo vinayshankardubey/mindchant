@@ -1,0 +1,117 @@
+// Body
+.layout-dark{
+    color: rgba(255,255,255,0.6);
+    background-color: var(--dark);
+	
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, .wp-block-search .wp-block-search__label, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		color: #fff;
+	}
+	.page-content {
+		&.bg-white{
+			background-color: #161616 !important;
+		}
+	}
+
+	.main-bnr-four{
+		.banner-inner {
+			background-color:transparent;
+		}
+	}
+	.animation-btn {
+		.white{
+			display:block;
+		}
+		.dark{
+			display:none;
+		}
+	}
+	.video-btn.dark {
+		.popup-youtube i {
+			border: 2px solid #fff;
+			color: #fff;
+		}
+	}
+	.data-text {
+		.animation-text {
+			text {
+				stroke: #fff;
+				animation: stroke-2 5s infinite alternate;
+			}
+		}
+	}
+	.dz-card.style-6 {
+		.dz-info{
+			background: #ffff;
+			.dz-title {
+				a{
+					color: #222;
+				}
+			}
+			p{
+				color: var(--bs-body-color);
+			}
+		}
+	}	
+	.counter-box{
+		&.style-1{
+			&.dark{
+				.title span,
+				.text{
+					color:#fff;
+				}
+			}	
+		}
+	}
+	
+	.dz-social-icon {
+		&.style-1{
+			&.dark {
+				ul > li > a {
+					background-color: #fff;
+					i{
+						color:var(--title);	
+					}
+				}
+			}
+		}
+	}
+	.section-head {
+		.sub-title {
+			background: linear-gradient(90deg, #FFF -2.36%, #FFF 101.57%);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+	.tickets-wrapper.style-1 .tickets-info .text,
+	.tickets-wrapper.style-1 .dz-info .title{
+		color:var(--title);
+	}
+	
+	.btn-link,
+	.icon-bx-wraper.style-1 .icon-media i,
+	.dz-services-box-one .serial-no,
+	.dz-card.style-3 .dz-meta ul li.dz-comment,
+	.dz-card.style-3 .dz-meta ul li,
+	.dz-card.style-3 .card-details .info .card-name,
+	.dz-card.style-3 .dz-info .dz-title a{
+		color:#fff;
+	}
+	
+	.services-inner{
+		border: 2px solid #fff;
+	}
+	.dz-services-box.active .services-box-two,
+	.dz-services-box-one {
+		border-left: 2px solid #fff;
+		@include respond('tab-port'){
+			border-left:0;
+			border-bottom: 2px solid #fff;
+		}
+	}
+
+	.customer-box .dz-content .title{
+		color:#fff !important;
+	}
+	
+}

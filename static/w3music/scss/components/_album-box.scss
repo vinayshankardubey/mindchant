@@ -1,0 +1,488 @@
+.album-box{
+	&.style-1{
+		.dz-info{
+			padding:25px;
+			background:#F5F5F5;
+		}
+		.dz-title{
+			color: var(--title);
+			font-size: 25px;
+			font-weight: 500;
+			line-height: 1.2;
+			text-transform: capitalize;
+			@include respond('phone'){
+				font-size:22px;
+			}
+		}
+		.dz-subtitle{
+			color: #666;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 1.2;
+			margin-bottom: 25px;
+			a{
+			color: #666;	
+			}
+		}
+		.bottom-text{
+			color:#666;
+			font-size: 16px;
+			font-weight: 400;
+			margin-bottom:10px;
+			display: block;
+		}
+		.dz-media{
+			.album-text {
+				position: absolute;
+				bottom: 20px;
+				left: 25px;
+				font-size: 26px;
+				font-weight: 500;
+				color: #fff;
+				width: 46%;
+				line-height: 1.2;
+				@include respond('phone'){
+					font-size:22px;
+				}
+			}
+		}
+	}
+	&.style-2 {
+		display: flex;
+		background:#F5F5F5;
+		@include respond('phone'){
+			display:block;
+		}
+		.dz-media{
+			width: 200px;
+			height: 200px;
+				@include respond('phone'){
+					width: 100%;
+				}
+		}
+		.dz-info {
+			padding: 20px 30px;
+		}
+		.bottom-text{
+			color:var(--title);
+			font-size: 14px;
+			font-weight: 500;
+			margin-bottom:10px;
+		}
+		.dz-title{
+			background: var(--gradient);
+			@include backgroundtext;
+			font-size: 30px;
+			font-weight: 600;
+			@include respond('phone'){
+				font-size:22px;
+			}
+		}
+		.dz-subtitle{
+			color: var(--title);
+			font-size: 18px;
+			font-weight: 400;
+			line-height:1.2; 
+		}
+	}
+	&.style-3{
+		transition: 0.5s;
+		position: relative;
+		height: 330px;
+		min-height: 330px;
+		@include respond('tab-land'){
+			height:100%;
+			min-height:100%;
+		}
+		.dz-media{
+			margin-bottom:15px;
+			transition:0.5s;
+			z-index: 1;
+			img{
+				transition: 0.5s;
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 80px;
+				height: 80px;
+				border-radius: 100%;
+				background: #fff;
+				transform: translate(-50%, -50%);
+				opacity:0;
+				transition:0.5s;
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 50px;
+				height: 50px;
+				border-radius: 100%;
+				background: #fff;
+				transform: translate(-50%, -50%);
+				z-index: 1;
+				opacity:0;
+				transition:0.5s;
+			}
+		}
+		.dz-info{
+			.dz-subtitle,
+			.dz-title{
+				color: var(--title);
+				font-size: 18px;
+				font-weight: 500;
+			}
+			.text{
+				color: #666;
+				font-size: 14px;
+				font-weight: 500;
+				span{
+					margin-right:10px;
+					background: var(--gradient);
+					@include backgroundtext;
+				}
+			}
+		}
+		&:hover{
+			.dz-media{
+				img{
+					border-radius:50%;
+					animation: rotate-360 20s infinite linear;
+				}
+				&:before{
+					opacity:1;
+				}
+				&:after{
+					opacity:0.5;
+				}
+			}
+		}
+	}
+	&.style-4{
+		margin-bottom: 30px;
+		@include respond('tab-port'){
+			margin-bottom: 0px;
+		}	
+		.dz-media{
+			margin-bottom:20px;
+		}
+		.dz-content{
+			.title{
+				font-size: 22px;
+				font-weight: 500;
+				margin-bottom:10px;
+			}
+		}
+	}
+}
+
+
+.album-title{
+	color: var(--title);
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 1.2;
+	@include respond('phone'){
+		font-size:22px;
+	}
+}
+.album-subtitle{
+	color: #666;
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom:30px;
+}
+.song-number{
+	&.style-1{
+		padding: 19px 20px;
+		background: #F5F5F5;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include respond('tab-port'){
+			padding:15px;
+		}
+		span{
+			color: var(--title);
+		}
+		.left-content{
+			color:var(--title);
+		}
+		.right-content{
+			font-size: 16px;
+			font-weight: 300;
+		}
+		span,
+		.bag{
+			color:#666;
+			font-size: 18px;
+			font-weight: 400;
+			@include respond('tab-port'){
+				font-size: 14px;
+			}
+		}
+		.bag{
+			font-size: 14px;
+			margin-left: 30px;
+			position: relative;
+			&:after{
+				content: "";
+				height: 1px;
+				width: 15px;
+				position: absolute;
+				left: -25px;
+				top: 50%;
+				border-radius: 50%;
+				background-color: var(--title);
+				transform: translate(0%, -50%);
+			}
+		}
+	}
+	&.style-2{
+		padding: 15px 0;
+		background: transparent;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		span{
+		    background: transparent;
+			display: flex;
+			color: #fff;
+			font-weight: 300;
+			font-size: 20px;
+			text-transform: capitalize;
+			@include respond('phone'){
+				font-size: 16px;
+
+			}
+		}
+		.right-content{
+			font-weight: 300;
+		}
+	}
+}
+.dz-album-detail{
+	&.style-1{
+		.dz-content{
+			padding-left:25px;
+				@include respond('tab-port'){
+					padding:0;
+				}
+			.title{
+				font-size: 40px;
+				font-weight: 500;
+				margin-bottom:30px;
+				text-transform: capitalize;
+				@include respond('tab-port'){
+					font-size:32px;
+				}
+				@include respond('phone'){
+					font-size:24px;
+				}
+			}
+			.subtitle{
+				font-size: 30px;
+				font-weight: 600;
+				margin-bottom: 30px;
+			}	
+			.dz-info{
+				ul{
+					margin-bottom:25px;
+					li{
+						color: var(--bs-body-color);
+						font-family: var(--font-family-base);
+						font-size: 16px;
+						font-weight: 400;
+						margin-bottom: 10px;
+						strong{
+							color:#000;
+							font-weight:500;
+						}
+						a{
+							i{
+								font-size: 25px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.style-2{
+		.dz-content{
+		padding-left:15px;
+			@include respond('tab-port'){
+				padding:0;
+			}
+			.subtitle{
+				font-size: 30px;
+				font-weight: 600;
+				margin-bottom: 30px;
+			}	
+			.dz-info{
+				ul{
+					margin-bottom:25px;
+					li{
+						color: var(--bs-body-color);
+						font-family: var(--font-family-base);
+						font-size: 16px;
+						font-weight: 400;
+						margin-bottom: 10px;
+						strong{
+							color:#000;
+							font-weight:500;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.tracklist{
+	margin-bottom:30px;
+	li{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 1px solid #CCC;
+		padding: 20px 0;
+		line-height: 1.2;
+		text-transform: capitalize;
+		@include respond('phone'){
+			padding:10px 0;
+		}
+		&:first-child{
+			border-top:1px solid #CCC;
+		}
+		span{
+			&:first-child{
+				color: var(--title);
+				font-size: 18px;
+				font-weight: 400;
+				@include respond('phone'){
+					font-size: 15px;
+				}
+			}
+			&:last-child{
+				color: var(--title);
+				font-size: 16px;
+				font-weight: 500;
+				@include respond('phone'){
+					font-size: 15px;
+				}	
+				i{
+					margin-left:10px;
+					font-size: 20px;
+					background: var(--gradient);
+					background-clip: text;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+			}
+		}
+	}
+}
+.reviews-swiper {
+	position: relative;
+	&:after {
+		display: none;
+	}
+	.dz-media{
+		height:100%;
+		img{
+			object-fit:cover;
+			height:100%;
+			width:100%;
+		}
+	}
+	
+	.btn-next,
+	.btn-prev {
+		width: auto;
+		height: auto;
+		line-height: auto;
+		color: #fff;
+		background: transparent;
+		box-shadow: none;
+		i{
+			transition:0.5s;
+		}
+		&:hover{
+			i{
+				background: var(--gradient);
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+	
+	.swiper-slide {
+		opacity: 0 !important;
+		@include transitionMedium;
+		
+		& > div{
+			transform: scale(0.85);
+			@include transitionMedium;			
+		}
+		&.swiper-slide-active {
+			opacity: 1 !important;
+			
+			& > div{
+				transform: scale(1);
+			}
+		}
+		@include respond('phone') {
+			padding: 0 !important;
+		}
+	}
+	.num-pagination {
+		.btn-prev,
+		.btn-next {
+			i {
+				color: #fff;
+				font-size:18px;
+			}
+		}
+	}
+}
+
+.reviews-swiper{
+	position: relative;
+}
+
+ 
+ 
+.reviews-box {
+	.reviews-info{
+		background:var(--secondary);
+		padding:30px 40px;
+		@include respond('phone'){
+			padding:20px;
+		}
+		.reviews-title{
+			color: #FFF;
+			font-size: 24px;
+			font-weight: 400;
+		}
+		.text{
+			color: #DEDEDE;
+		}
+		.sub-title{
+			color: #FFF;
+			font-size: 18px;
+			font-weight: 500;
+		}
+	}
+}
+ 
+ 
+ 
+ 

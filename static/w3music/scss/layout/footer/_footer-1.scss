@@ -1,0 +1,105 @@
+// ft-clients
+.site-footer{
+	&.style-1{
+		position: relative;
+		z-index: 2;
+		.footer-top{
+			padding-top: 50px;
+			position: unset;
+			padding-bottom: 80px;
+			@include respond('tab-port'){
+				padding-top:35px;
+				padding-bottom: 60px;
+			}
+			@include respond('phone-land'){
+				padding-top:30px;
+				padding-bottom: 40px;
+			}
+			@include respond('phone'){
+				padding-top:10px;
+				padding-bottom: 30px;
+			}
+		}
+		.sub-footer-title{
+			color: #FFF;
+			text-align: center;
+			font-size: 22px;
+			font-weight: 400;
+			text-transform: capitalize;
+			display: block;
+			margin-bottom: 10px;
+		}
+		.footer-title{
+			color: #FFF;
+			text-align: center;
+			font-size: 75px;
+			font-weight: 700;
+			text-transform: lowercase;
+			line-height: 1.2;
+			@include respond('tab-land'){
+				font-size: 65px;
+			}
+			@include respond('phone-land'){
+				font-size:50px;
+			}
+			@include respond('phone'){
+				font-size:36px;
+			}
+		}
+		.mid-content{
+			margin-bottom: 40px;
+			@include respond('tab-port'){
+				margin-bottom:20px;
+			}
+		}
+		.footer-menu{
+			ul{
+				text-align: center;
+				li{
+					margin: 0 20px;
+					display: inline-block;
+					border-bottom:1px solid transparent;
+					@include transitionMedium;
+					&:hover{
+						border-bottom:1px solid var(--primary);
+					}
+					a{
+						color: #F1F1F1;
+						font-family: Poppins;
+						font-size: 16px;
+						font-weight: 400;
+						@include respond('phone'){
+							font-size:14px;
+						}
+					}
+					@include respond('tab-port'){
+						margin: 0 15px;
+					}
+					@include respond('phone'){
+						margin:0 15px;
+					}
+				}
+			}
+		}
+		.footer-bottom {
+			border-top: 1px solid #818181;
+			.text > a,
+			.text,
+			.copyright-text > a,
+			.copyright-text {
+				color: #D4D4D4;
+				font-family: var(--font-family-base);
+				font-size: 16px;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+

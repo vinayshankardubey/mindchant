@@ -1,0 +1,355 @@
+.main-bnr-four{
+	position:relative;
+  	align-items: center;
+	z-index:1;
+	overflow: hidden;
+	
+	.banner-inner {
+		position:relative;
+		z-index:1;
+		background-color:#fff;
+		padding-top: 50px;
+		@include respond('phone'){
+			padding-top:30px;
+		}
+		.animation-btn {
+			img{
+				position: absolute;
+				top: 2rem;
+				right: 30rem;
+				animation: rotate-360 20s infinite linear;
+				@include respond('wide-desktop'){
+					right: 15rem;
+				}
+				@include respond('tab-land'){
+					right: 5rem;
+					width: 120px;
+				}
+			}
+			.img2{
+				display:none;
+			}
+			@include respond('phone-land'){
+				display:none;
+			}
+		}
+		.banner-img {
+			position: absolute;
+			top: 3%;
+			z-index: -1;
+			animation: move1 5s infinite;
+			@include respond('tab-land'){
+				width: 20%;
+				object-fit: cover;
+			}
+		}
+		.bottom-title{
+			font-size: 35px;
+			font-weight: 600;
+			@include respond('tab-port'){
+				font-size:26px;
+			}
+		}
+		
+		.banner-content{
+			position: relative;
+			z-index: 1;
+		    margin-bottom: 50px;
+			@include respond('tab-land'){
+				margin-bottom:30px;
+			}
+			.sub-title{
+				font-weight: 600;
+				font-size:18px;
+				line-height:1.2;
+			}
+			h1{
+				font-style: normal;
+				font-weight: 700;
+				font-size: 64px;
+				line-height: 1;
+				margin-bottom: 10px;
+				width: 50%;
+			}
+			p{
+				font-size: 16px;
+				line-height: 1.2;
+				max-width:522px;
+				margin-bottom:30px;
+			}
+			.banner-btn{
+				margin-bottom:50px;
+			}	
+			@include respond('tab-land'){
+				p{
+				    margin-bottom: 20px;
+				}
+				h1{
+					width:100%;
+					font-size:55px;
+				}
+			}
+			@include respond('tab-port'){
+				h1{
+					font-size: 42px;
+				}
+			}
+			@include respond('phone'){
+				h1{
+					font-size: 36px;
+				}
+				p{
+					width:100%;
+				}
+				.banner-btn{
+					margin-top: 20px;
+				}
+			}
+		}
+		.banner-media{
+			position: relative;
+			z-index:1;
+			#video-background{
+			    height: 440px;
+				width: 100%;
+				max-height: 440px;
+				object-fit: cover;
+				@include respond('tab-port'){
+					height: 300px;
+					max-height: 300px;
+				}
+			}
+		}
+		.item-media{
+			position: absolute;
+			bottom: 50px;
+			margin-left: -50px;
+			width: 53vw;
+			
+			img:not(.crown){
+			    width: 100%;
+			}
+		}
+
+		@include respond('tab-port'){
+			
+			.item-bg{
+				display: none;
+			}
+			.banner-media {
+				transform: unset;
+			}
+			.item-media{
+				position: static;
+			}
+		}
+		
+		@include respond('phone-land'){
+
+			.banner-media{
+				width:100%;
+			}
+			.item-media{
+				position: initial;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 30px;
+				width: 100%;
+				
+				img{
+					width:100%;
+					height:auto;
+				}
+			}
+		}
+	}
+	.social-post{
+		li{
+		    font-size: 18px;
+			font-weight: 500;
+			writing-mode: tb-rl;
+			transform: rotate(180deg);
+			position: absolute;
+			z-index: 4;
+			animation: key1 .7s ease infinite alternate;
+			a{
+				color:var(--title);
+			}
+			&:first-child{
+				left: 40px;
+				top: 30%;
+				padding-top: 40px;
+				&:after{
+					content: '';
+					position: absolute;
+					top: 0;
+					left: -35%;
+					width: 50px;
+					height: 2px;
+					background:var(--secondary);
+					transform: rotate(90deg);
+				}
+			}
+			&:last-child{
+				right: 40px;
+				top: 22%;
+			}
+		}
+		@include respond('tab-port'){
+			display:none;
+		}
+	}
+}
+
+.main-thumb2-area{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	position: relative;
+	bottom: -130px;
+	left: 0;
+	.food-card{
+		@include transitionSlow;
+		.icon{
+			@include transitionSlow;
+			width:78px;
+			min-width:78px;
+			height:78px;
+			line-height:78px;
+			border-radius:var(--border-radius-base);
+			background:var(--rgba-primary-1);
+			color:var(--primary);
+			text-align:center;
+			i{
+				font-size:45px;
+			}
+		}
+		&:hover{
+			.icon{
+				background:var(--primary);
+				color:#fff;
+			}
+		}
+	}
+	@include respond('wide-desktop'){
+		bottom: -80px;
+	}
+	@include respond('tab-land'){
+		bottom: -95px;
+	}
+	@include respond('tab-land'){
+		display:none;
+	}
+}
+
+@media only screen and (min-width: 1281px){
+	.boxed{
+		.main-bnr-two .banner-inner .item-media {
+			width: 48vw;
+		}
+	}
+}
+@media only screen and (min-width: 1481px){
+	.boxed{
+		.main-bnr-two .banner-inner .item-media {
+			width: 44vw;
+		}
+	}
+}
+@media only screen and (min-width: 1681px){
+	.boxed{
+		.main-bnr-two .banner-inner{
+			.item-bg{
+				width: 45vw;
+			}
+			.item-media{
+				width: 40vw;
+			}
+			.offer{
+				top: -150px;
+				right: 100px;
+			}
+		}
+	}
+}
+
+.data-text{
+    overflow: visible;
+    position: absolute;
+    top: -46%;
+    width: 100%;
+    opacity: 0.1;
+    height: 55%;
+    z-index: -999;
+	@include respond('wide-desktop'){
+		 top: -35%;
+	}
+	@include respond('tab-land'){
+		 top: -23%;
+	}
+	@include respond('tab-port'){
+		 top: -28%;
+	}
+	@include respond('phone-land'){
+		top:-21%;
+	}
+	@include respond('phone'){
+		top:-13%;
+	}
+	.animation-text{
+		width: 100%;
+		height: 100%;
+		text {
+			text-transform: uppercase;
+			animation: stroke 5s infinite alternate;
+			stroke-width: 2;
+			stroke: #fff;
+			font-size: 208px;
+			font-weight: 700;
+			font-family: var(--font-family-base);
+			height: 100%;
+			@include respond('wide-desktop'){
+				font-size: 160px;
+			}
+			@include respond ('tab-land'){
+				font-size: 110px;
+			}
+			@include respond ('tab-port'){
+				font-size: 85px;
+				font-weight: 500;
+			}
+			@include respond('phone-land'){
+				font-size:65px;
+				font-weight:400;
+			}
+			@include respond('phone'){
+				font-size:40px;
+			}
+		}
+	}
+}
+
+@keyframes stroke {
+	0%   {
+		fill: rgba(0,0,0,0); stroke: rgba(0,0,0,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(0,0,0,0); stroke: rgba(0,0,0,1); }
+	80%  {fill: rgba(0,0,0,0); stroke: rgba(0,0,0,1); stroke-width: 3; }
+	100% {
+		fill: rgba(0,0,0,1); stroke: rgba(0,0,0,0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+@keyframes stroke-2 {
+	0%   {
+		fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); }
+	80%  {fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); stroke-width: 3; }
+	100% {
+		fill: rgba(255,255,255,1); stroke: rgba(255,255,255,0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}

@@ -1,0 +1,255 @@
+#bg {
+    background-attachment: fixed;
+    background-size: cover;
+}
+.main-bar-wraper.sticky-no{
+	.main-bar {
+		position: unset;
+	}
+}
+
+@media only screen and (min-width: 1281px){
+	
+	/* boxed */
+	[data-layout="boxed"]{
+		.page-wraper{
+			max-width: 1280px;
+			margin: 0 auto;
+			position: relative;
+			overflow: hidden;
+			box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+		}
+		.main-bnr-four .social-post li:first-child {
+			left: 10px;
+			top: 30%;
+			padding-top: 40px;
+		}
+		.main-bar{
+			transform: translateX(-50%);
+			left: 50%;
+			max-width: 1280px;
+		}
+		.site-header.style-2 {
+			--headerspacing: 0 50px;
+		}
+		.main-bnr-one {
+			.banner-inner{
+				.banner-content{
+					h1{
+						font-size:70px;
+						line-height:80px;
+					}
+				}
+				.garlic{
+					right:-135px;
+				}
+			}
+			.main-swiper1-pagination {
+				left: 0;
+			}
+		}
+		.swiper-btn-lr{
+			.btn-prev-long, .btn-prev{
+				left:-30px;
+			}
+			.btn-next-long, .btn-next{
+				right:-30px;
+			}	
+		} 
+		.section-wrapper-2 {
+			.bg1{
+				width:22vw;
+			}
+			.bg2 {
+				top: 20px;
+				right: 0px;
+			}
+			&.right{
+				.bg1{
+					width:22vw;
+					right:-306px;
+				}
+			}
+		}
+		.main-bnr-two{
+			.banner-inner{
+				.banner-content{
+					h1{
+						font-size:70px;
+						line-height:80px;
+					}
+				}
+			}
+		}
+		.section-wrapper-5, .section-wrapper-4, .section-wrapper-8{
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		.site-footer{
+			&.style-1{
+				.bg1{
+					left: -114px;
+					bottom: -36px;
+					width: 10vw;
+				}
+				.bg2{
+					right:-18px;
+				}
+			}
+			&.style-2 {
+				.footer-bg-wrapper{
+					margin-left: 20px;
+					margin-right: 20px;
+				}
+			}
+			&.style-3 {
+				.bg1{
+					left: -115px;
+					bottom: 110px;
+				}
+				.bg2{
+					top:-100px;
+					right:0;
+				}  
+			}  
+		}
+		.under-construction {
+			.construction-media{
+				&::after{
+					left:50px;
+				}
+				img{
+					left:40px;
+				}
+			}
+		}
+		.section-wrapper-5{
+			.bg1{
+				top:0;
+				left:-190px;
+			}
+			.bg2{
+				width:30vw;
+				right:80px;
+			}
+		}
+		.section-wrapper-7{
+			.bg1{
+				top: 9px;
+				width: 10vw;
+				left: -106px;
+			}
+			.bg2{
+				width:30vw;
+				right:-80px;
+			}
+			&::after{
+				width:550px;
+				height:550px;
+				right:-12%;
+			}
+		}
+		.icon-bx-wraper{
+			&.style-5{
+				.icon-content{
+					padding: 90px 15px 40px;
+				}
+			}
+		}
+		.side-heading-info{
+			padding: 0 20px;
+			.title {
+				color: var(--title);
+				font-size: 45px;
+				font-weight: 700;
+				line-height: 1;
+				text-transform: capitalize;
+				margin: 0;
+			}
+			.sub-title {
+				background: var(--gradient);
+				font-family: var(--font-family-title);
+				font-size: 30px;
+				font-weight: 400;
+				margin: 0;
+				padding: 0;
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+		.main-bnr-one {
+			.banner-inner {
+				padding-left: 140px;
+				height: 800px;
+				padding-top: 85px;
+			}
+		}
+		.site-header.style-3.header-transparent .main-bar {
+			background: #fff;
+		}		
+		.main-bnr-three .banner-inner .social-post li {
+			left: 15px;
+		}
+		.main-bnr-three .banner-inner {
+			.animation-btn {
+				top: 2rem;
+				left: 2rem;
+				img{
+					width:85px;
+				}
+			}
+		}
+	}
+	
+	
+	/* Frame */
+	[data-layout="frame"]{
+		padding:30px;
+		
+		.page-wraper{
+			margin: 0 auto;
+			position: relative;
+			overflow: hidden;
+			box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+			height: auto!important;
+		}
+		.is-fixed{
+			.main-bar {
+				left:0;
+				width: 100%;
+				margin: 0;
+				position: unset;
+			}
+		}
+		button.scroltop{
+			right:50px;
+			bottom:50px;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 1281px) {
+	[data-layout="frame"]{
+		padding: 0 !important;
+		
+		button.scroltop{
+			right:15px;
+			bottom:15px;
+		}
+	} 
+}
+
+.theme-sharped{
+	--border-radius-base: 0;
+	@include transitionNone;
+}
+.theme-rounded{
+	--border-radius-base: 10px;
+	@include transitionNone;
+}
+
+.theme-bg-color{
+	background-color: var(--theme-bg-color);
+}

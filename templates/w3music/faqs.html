@@ -1,0 +1,136 @@
+{% extends 'w3music/elements/layouts/layout.html' %}
+{% load static %}
+        
+{% block additional_css %}
+{% endblock %}
+		
+{% block content %}
+		<!-- about section -->	
+		<section class="content-inner">
+			<div class="container">
+				<div class="row justify-content-between align-items-center">
+					<div class="text-center text-xl-start col-xl-6 m-lg-b20">
+						<div class="section-head  style-1">
+							<h2 class="title wow flipInX w-100" data-wow-delay="0.4s">Frequently Asked Questions</h2>
+							<p>Velit egestas dui id ornare arcu. Nibh sit amet commodo nulla nullam vehicula. Arcu dictum varius duis at consectetur. Faucibus nisl</p>
+						</div>
+					</div>
+					<div class="text-center text-xl-end col-xl-6 m-b30">
+						<a href="{% url 'w3music:contact-us' %}" class="btn btn-dark btn-md shadow-white  btn-hover-1 rounded-0"><span>DOCUMENTATION</span></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-8 col-md-12 col-sm-12 m-b30">
+						<div class="accordion dz-accordion style-1 custom-space" id="accordionFaq1">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="heading1">
+									<a href="#" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+										Is There a Tree Trial Available?
+										<span class="toggle-close"></span>
+									</a>
+								</h2>
+								<div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionFaq1">
+									<div class="accordion-body">
+										<p class="m-b0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+									</div>
+								</div>
+							</div>							
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="heading2">
+									<a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+										Do I have To be Local To Work With You?
+										<span class="toggle-close"></span>
+									</a>
+								</h2>
+								<div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionFaq1">
+									<div class="accordion-body">
+										<p class="m-b0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="heading3">
+									<a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+										What is your creative work process?
+										<span class="toggle-close"></span>
+									</a>
+								</h2>
+								<div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionFaq1">
+									<div class="accordion-body">
+										<p class="m-b0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="heading4">
+									<a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+										Who will work on my webdesign project?
+										<span class="toggle-close"></span>
+									</a>
+								</h2>
+								<div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionFaq1">
+									<div class="accordion-body">
+										<p class="m-b0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="heading55">
+									<a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse55" aria-expanded="false" aria-controls="collapse55">
+										What are your hours of operation?
+										<span class="toggle-close"></span>
+									</a>
+								</h2>
+								<div id="collapse55" class="accordion-collapse collapse" aria-labelledby="heading55" data-bs-parent="#accordionFaq1">
+									<div class="accordion-body">
+										<p class="m-b0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12 col-sm-12 m-b30">
+						<div class="widget">
+							<div class="widget-title">
+								<h4 class="title">Search</h4>
+							</div>
+							<div class="search-bx">
+								<form role="search" method="">
+									<div class="input-group">
+										<div class="input-side">
+											<input name="text" class="form-control" placeholder="Enter Your Keyword" type="text">
+											<div class="input-group-btn">
+												<button type="submit" class="btn">
+													<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+													  <g clip-path="url(#clip0_1338_6867)">
+														<path d="M19.6678 17.732L14.0056 12.3034C15.1024 11.0045 15.7628 9.354 15.7628 7.55639C15.7628 3.39004 12.2269 0 7.88136 0C3.53581 0 0 3.39001 0 7.55636C0 11.7227 3.53585 15.1128 7.8814 15.1128C9.75632 15.1128 11.4778 14.4796 12.8326 13.4281L18.4947 18.8567C18.6565 19.0118 18.8689 19.0898 19.0813 19.0898C19.2937 19.0898 19.506 19.0118 19.6678 18.8567C19.9922 18.5457 19.9922 18.043 19.6678 17.732ZM7.8814 13.5219C4.45008 13.5219 1.65925 10.8462 1.65925 7.55636C1.65925 4.26653 4.45008 1.59079 7.8814 1.59079C11.3127 1.59079 14.1035 4.26653 14.1035 7.55636C14.1035 10.8462 11.3127 13.5219 7.8814 13.5219Z" fill="#222222"/>
+													  </g>
+													  <defs>
+														<clipPath id="clip0_1338_6867">
+														  <rect width="19.9111" height="19.09" fill="white"/>
+														</clipPath>
+													  </defs>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>	
+						<div class="service-detail style-1 light m-b30">
+							<h6 class="dz-title">Need Help ?</h6>
+							<p>Sed faucibus turpis in eu mi bibendum neque egestas. Viverra vitae congue consequat ac felis donec</p>
+							<div class="detail-box">
+								<span class="number"><strong><i class="fa-solid fa-phone-volume"></i>Phone :</strong>(+19) 12 3456 789</span>
+								<span class="infogmail"><strong><i class="fa-regular fa-envelope"></i>Email :</strong>Demo@gmail.com</span>		
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- about section -->	
+{% endblock %}

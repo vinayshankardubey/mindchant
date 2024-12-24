@@ -1,0 +1,1658 @@
+{% extends 'w3music/elements/layouts/layout-home.html' %}
+{% load static %}
+        
+{% block additional_css %}
+{% endblock %}
+		
+{% block content %}
+        <div class="page-content bg-white">
+            <!-- Banner -->
+            <div class="slidearea">
+                <div class="side-heading-info">
+                    <h3 class="sub-title wow bounceInRight" data-wow-delay="1.4s">WelCome To W3Music</h3>
+                    <h2 class="title  wow bounceInRight" data-wow-delay="1.2s">2023 Fiesta Music Festival</h2>
+                </div>
+                <div class="main-bnr-one" >
+                    <video autoplay="" loop="" muted="" id="video-background2">
+                        <source src="{% static 'w3music/video/video2.mp4' %}" type="video/mp4">
+                    </video>
+                    <div class="banner-inner">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-xl-5 col-lg-5 col-md-5">
+                                    <video autoplay="" loop="" muted="" id="video-background3">
+                                        <source src="{% static 'w3music/video/video3.mp4' %}" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 col-md-7">
+                                    <div class="banner-content">
+                                        <h1 class="title  wow fadeInUp" data-wow-delay="0.6s">We Bring The Noice</h1>
+                                        <p class="wow fadeInUp" data-wow-delay="0.8s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                        <a href="{% url 'w3music:contact-us' %}" class="btn btn-dark btn-md shadow-secondary btn-hover-1 wow fadeInUp" data-wow-delay="1s"><span>DISCOVER MORE</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>	
+                </div>
+            </div>
+            <!-- Banner -->
+            
+            <!-- Album section -->
+            <section class="p-t40 p-b0">
+                <div class="container">
+                    <div class="row align-items-center">	
+                        <div class="col-lg-8">
+                            <h4 class="album-title wow fadeInRight " data-wow-delay="0.2s">New Album High Lights</h4>
+                            <h6 class="album-subtitle wow fadeInRight " data-wow-delay="0.4s">2020 | 13 songs, 59 min</h6>
+                            <div class="tab-content wow fadeInRight " data-wow-delay="0.6s" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-hip-hop" role="tabpanel" aria-labelledby="nav-hip-hop-tab" tabindex="0">
+                                    <div class="album-box style-2 overlay-shine dz-img-effect zoom m-b10">
+                                        <div class="dz-media">
+                                            <a href="{% url 'w3music:blog-standard' %}"><img src="{% static 'w3music/images/album/pic2.jpg' %}" alt="/"></a>
+                                        </div>
+                                        <div class="dz-info">
+                                            <h5 class="dz-title"><a href="{% url 'w3music:blog-standard' %}">“Hip Hop Chill”</a></h5>
+                                            <h6 class="dz-subtitle"><a href="{% url 'w3music:blog-standard' %}">YouTube Audio Library</a></h6>
+                                            <span class="bottom-text">MK2</span>
+                                        </div>
+                                    </div>
+                                    <div class="dz-player m-b15" data-src="{% static 'w3music/song/song1.mp3' %}">
+                                        <button class="dz-play-btn" disabled><span class="dz-play-btnIco"><i class="fa-solid fa-play"></i></span></button>
+                                        <button class="dz-play-btn"><span class="dz-play-btnIco"><svg class="svg-inline--fa fa-pause" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pause" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"></path></svg></span></button>
+                                        <div class="dzPlayNum">
+                                            <span class="dzPlayCurDuration"></span>
+                                        </div>
+                                        <div class="dz-player-range">
+                                            <span class="under-dz-player-ranger"></span>
+                                            <input class="dzPlayRange" type="range" min="0" value="0" step="1" disabled><span class="change-dz-player-range"></span>
+                                        </div>
+                                        <div class="dzPlayNum">
+                                            <span class="dzPlayDuration"></span>
+                                        </div>
+                                        <div class="dz-volume-container">
+                                            <span class="dzPlayerVolIcon"><i class="fa fa-volume-up"></i></span>
+                                            <div class="dz-player-range-volume">
+                                                <span class="under-dz-player-ranger"></span>
+                                                <input class="dzPlayVol" type="range" min="0" max="1" value="1" step="0.1" disabled><span class="change-dz-player-range"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-electro" role="tabpanel" aria-labelledby="nav-electro-tab" tabindex="0">
+                                    <div class="album-box style-2 overlay-shine dz-img-effect zoom m-b10">
+                                        <div class="dz-media">
+                                            <a href="{% url 'w3music:blog-standard' %}"><img src="{% static 'w3music/images/album/pic3.jpg' %}" alt="/"></a>
+                                        </div>
+                                        <div class="dz-info">
+                                            <h5 class="dz-title"><a href="{% url 'w3music:blog-standard' %}">“Electro”</a></h5>
+                                            <h6 class="dz-subtitle"><a href="{% url 'w3music:blog-standard' %}">YouTube Audio Library</a></h6>
+                                            <span class="bottom-text">MK2</span>
+                                        </div>
+                                    </div>
+                                    <div class="dz-player m-b15" data-src="{% static 'w3music/song/song2.mp3' %}">
+                                        <button class="dz-play-btn" disabled><span class="dz-play-btnIco"><i class="fa-solid fa-play"></i></span></button>
+                                        <button class="dz-play-btn"><span class="dz-play-btnIco"><svg class="svg-inline--fa fa-pause" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pause" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"></path></svg></span></button>
+                                        <div class="dzPlayNum">
+                                            <span class="dzPlayCurDuration"></span>
+                                        </div>
+                                        <div class="dz-player-range">
+                                            <span class="under-dz-player-ranger"></span>
+                                            <input class="dzPlayRange" type="range" min="0" value="0" step="1" disabled><span class="change-dz-player-range"></span>
+                                        </div>
+                                        <div class="dzPlayNum">
+                                            <span class="dzPlayDuration"></span>
+                                        </div>
+                                        <div class="dz-volume-container">
+                                            <span class="dzPlayerVolIcon"><i class="fa fa-volume-up"></i></span>
+                                            <div class="dz-player-range-volume">
+                                                <span class="under-dz-player-ranger"></span>
+                                                <input class="dzPlayVol" type="range" min="0" max="1" value="1" step="0.1" disabled><span class="change-dz-player-range"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-rock" role="tabpanel" aria-labelledby="nav-rock-tab" tabindex="0">
+                                    <div class="album-box style-2 overlay-shine dz-img-effect zoom m-b10">
+                                        <div class="dz-media">
+                                            <a href="{% url 'w3music:blog-standard' %}"><img src="{% static 'w3music/images/album/pic4.jpg' %}" alt="/"></a>
+                                        </div>
+                                        <div class="dz-info">
+                                            <h5 class="dz-title"><a href="{% url 'w3music:blog-standard' %}">“Rock Intro”</a></h5>
+                                            <h6 class="dz-subtitle"><a href="{% url 'w3music:blog-standard' %}">YouTube Audio Library</a></h6>
+                                            <span class="bottom-text">MK2</span>
+                                        </div>
+                                    </div>
+                                    <div class="dz-player m-b15" data-src="{% static 'w3music/song/song3.mp3' %}">
+                                        <button class="dz-play-btn" disabled><span class="dz-play-btnIco"><i class="fa-solid fa-play"></i></span></button>
+                                        <button class="dz-play-btn"><span class="dz-play-btnIco"><svg class="svg-inline--fa fa-pause" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pause" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"></path></svg></span></button>
+                                        <div class="dzPlayNum">
+                                            <span class="dzPlayCurDuration"></span>
+                                        </div>
+                                        <div class="dz-player-range">
+                                            <span class="under-dz-player-ranger"></span>
+                                            <input class="dzPlayRange" type="range" min="0" value="0" step="1" disabled><span class="change-dz-player-range"></span>
+                                        </div>
+                                        <div class="dzPlayNum">
+                                            <span class="dzPlayDuration"></span>
+                                        </div>
+                                        <div class="dz-volume-container">
+                                            <span class="dzPlayerVolIcon"><i class="fa fa-volume-up"></i></span>
+                                            <div class="dz-player-range-volume">
+                                                <span class="under-dz-player-ranger"></span>
+                                                <input class="dzPlayVol" type="range" min="0" max="1" value="1" step="0.1" disabled><span class="change-dz-player-range"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dz-tabs style-1 wow fadeInRight " data-wow-delay="0.8s">
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="nav-hip-hop-tab" data-bs-toggle="tab" data-bs-target="#nav-hip-hop" role="tab" aria-controls="nav-hip-hop" aria-selected="true">
+                                        <span class="song-number style-1">
+                                            <span class="left-content">
+                                                1. “Hip Hop Chill” <span class="bag">MK2</span>
+                                            </span>
+                                            <span class="right-content">
+                                                00:07
+                                            </span>
+                                        </span>
+                                    </button>
+                                    <button class="nav-link" id="nav-electro-tab" data-bs-toggle="tab" data-bs-target="#nav-electro" role="tab" aria-controls="nav-electro" aria-selected="false">
+                                        <span class="song-number style-1">
+                                            <span class="left-content">
+                                                2. “Electro” <span class="bag">MK2</span>
+                                            </span>
+                                            <span class="right-content">
+                                                03:50
+                                            </span>
+                                        </span>
+                                    </button>
+                                    <button class="nav-link" id="nav-rock-tab" data-bs-toggle="tab" data-bs-target="#nav-rock" role="tab" aria-controls="nav-rock" aria-selected="false">
+                                        <span class="song-number style-1">
+                                            <span class="left-content">
+                                                3. “Rock Intro”  <span class="bag">Audio Nautix</span>
+                                            </span>
+                                            <span class="right-content">
+                                                02:20
+                                            </span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="{% url 'w3music:about-us' %}" class="btn btn-dark btn-hover-1 wow fadeInRight m-b30 btn-md" data-wow-delay="1s"><span class="">FULL DISCOGRAPHY</span></a>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="album-box style-1 overlay-shine dz-img-effect zoom m-b30 wow fadeInRight" data-wow-delay="1.2s">
+                                <div class="dz-media">
+                                    <a href="{% url 'w3music:blog-standard' %}"><img src="{% static 'w3music/images/album/pic1.jpg' %}" alt="/"></a>
+                                    <div class="album-text">Album of The year</div>
+                                </div>
+                                <div class="dz-info">
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-standard' %}">Album of The Year</a></h5>
+                                    <h6 class="dz-subtitle"><a href="{% url 'w3music:blog-standard' %}">By Marcellus 2017 | 13 songs, 59 min</a></h6>
+                                    <span class="bottom-text">Available Now</span>
+                                    <div class="d-flex align-items-center m-b10">
+                                        <a href="{% url 'w3music:about-us' %}" class="btn btn-dark btn-hover-1"><span class="">ITUNES</span></a>
+                                        <a href="{% url 'w3music:about-us' %}" class="btn btn-dark btn-hover-1  m-l10"><span class="">AMAZON</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>	
+            </section>
+            <!-- Album section -->	
+            
+            <!-- about section -->	
+            <section class="content-inner-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="dz-media wow fadeInUp split-box h-100" data-wow-delay="0.2s">
+                                <img src="{% static 'w3music/images/about/pic1.jpg' %}" alt="/" class="h-100">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12" data-wow-delay="0.2s">
+                            <div class="about-box style-1 bg-gray  wow fadeInUp">
+                                <span class="sub-title">About Me</span>
+                                <h5 class="title">Hip Hop Legends</h5>
+                                <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                <div class="dz-social-icon style-1 dz-hover-move white m-b30">
+                                    <ul>									
+                                        <li style="transform: translate(0px, 0px) scale(1);">
+                                            <a target="_blank" href="https://dribbble.com/">
+                                                <i class="flaticon flaticon-dribble"></i>
+                                            </a>
+                                        </li>
+                                        <li style="transform: translate(-0.1px, 0px) scale(1);">
+                                            <a target="_blank" href="https://www.facebook.com/dexignzone/">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li style="transform: translate(-0.1px, 0px) scale(1);">
+                                            <a target="_blank" href="https://open.spotify.com/">
+                                                <i class="flaticon flaticon-spotify"></i>
+                                            </a>
+                                        </li>
+                                        <li style="transform: translate(0px, -0.1px) scale(1);">
+                                            <a target="_blank" href="https://twitter.com/dexignzones">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="{% url 'w3music:about-us' %}" class="btn btn-dark btn-hover-1 btn-long"><span>ABOUT US</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- about section -->	
+            
+            <!-- blog section -->	
+
+                     <section class="content-inner overflow-hidden">
+                    <div class="container">
+                        <div class="d-lg-flex  d-block align-items-end border-bottom m-b30">
+                            <div class="section-head  style-1 m-0 flex-1 text-center text-xl-start">
+                                <h5 class="sub-title wow flipInX" data-wow-delay="0.2s">Latest Releases</h5>
+                                <h2 class="title wow flipInX" data-wow-delay="0.4s">Latest Releases</h2>
+                            </div>
+                            <div class="m-b30 text-center text-xl-end">
+                                <a href="{% url 'w3music:compact-album-single' %}" class="btn-link btn-gradient wow flipInX" data-wow-delay="0.6s">VIEW ALL SOLUTION</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+                                <div class="music-box style-1 bg-lightgreen">
+                                    <div class="dz-media">
+                                        <img src="{% static 'w3music/images/music-media/pic1.jpg' %}" alt="/">
+                                    </div>
+                                    <div class="dz-info">
+                                        <h6 class="title"><a href="{% url 'w3music:compact-album-single' %}">Harmony Cascade</a></h6>
+                                        <div class="d-flex align-items-center">
+                                            <img src="{% static 'w3music/images/music-media/small/pic1.png' %}" alt="/">
+                                            <span>Felix Moonshadow</span>
+                                        </div>
+                                        <div class="dz-meta">
+                                            <ul>
+                                                <li class="post-author">Album</li>
+                                                <li class="post-date">2023</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="music-player">
+                                        <div class="left-content">
+                                            <span class="heart"></span>
+                                            <a href="#" download="{% static 'w3music/song/song1.mp3' %}"><i class="flaticon flaticon-download-circular-button"></i></a>
+                                            <a  href="javascript:void(0)"><i class="flaticon flaticon-option"></i></a>
+                                        </div>
+                                        <div class="right-content">
+                                            <a  href="javascript:void(0)"><i class="flaticon flaticon-shuffle"></i></a>
+                                            <audio class="track">
+                                            <source src="{% static 'w3music/song/song1.mp3' %}" type="audio/mp3">
+                                            </audio>
+                                            <div class="player-container">
+                                            <div class="play-pause play">Play</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+                                <div class="music-box style-1 bg-lightpurple">
+                                    <div class="dz-media">
+                                        <img src="{% static 'w3music/images/music-media/pic2.jpg' %}" alt="/">
+                                    </div>
+                                    <div class="dz-info">
+                                        <h6 class="title"><a href="{% url 'w3music:compact-album-single' %}">Astral Grooves</a></h6>
+                                        <div class="d-flex align-items-center">
+                                            <img src="{% static 'w3music/images/music-media/small/pic1.png' %}" alt="/">
+                                            <span>Markus Weight</span>
+                                        </div>
+                                        <div class="dz-meta">
+                                            <ul>
+                                                <li class="post-author">Album</li>
+                                                <li class="post-date">2023</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="music-player">
+                                        <div class="left-content">
+                                            <span class="heart"></span>
+                                            <a href="#" download="{% static 'w3music/song/song2.mp3' %}"><i class="flaticon flaticon-download-circular-button"></i></a>
+                                            <a  href="javascript:void(0)"><i class="flaticon flaticon-option"></i></a>
+                                        </div>
+                                        <div class="right-content">
+                                            <a  href="javascript:void(0)"><i class="flaticon flaticon-shuffle"></i></a>
+                                            <audio class="track">
+                                            <source src="{% static 'w3music/song/song2.mp3' %}" type="audio/mp3">
+                                            </audio>
+                                            <div class="player-container">
+                                            <div class="play-pause play">Play</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+                                <div class="music-box style-1 bg-lightgray">
+                                    <div class="dz-media">
+                                        <img src="{% static 'w3music/images/music-media/pic3.jpg' %}" alt="/">
+                                    </div>
+                                    <div class="dz-info">
+                                        <h6 class="title"><a href="{% url 'w3music:compact-album-single' %}">Enchanted Cadence</a></h6>
+                                        <div class="d-flex align-items-center">
+                                            <img src="{% static 'w3music/images/music-media/small/pic1.png' %}" alt="/">
+                                            <span>Elara Stardust</span>
+                                        </div>
+                                        <div class="dz-meta">
+                                            <ul>
+                                                <li class="post-author">Album</li>
+                                                <li class="post-date">2023</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="music-player">
+                                        <div class="left-content">
+                                            <span class="heart"></span>
+                                            <a href="#" download="{% static 'w3music/song/song3.mp3' %}"><i class="flaticon flaticon-download-circular-button"></i></a>
+                                            <a  href="javascript:void(0)"><i class="flaticon flaticon-option"></i></a>
+                                        </div>
+                                        <div class="right-content">
+                                            <a  href="javascript:void(0)"><i class="flaticon flaticon-shuffle"></i></a>
+                                            <audio class="track">
+                                            <source src="{% static 'w3music/song/song3.mp3' %}" type="audio/mp3">
+                                            </audio>
+                                            <div class="player-container">
+                                            <div class="play-pause play">Play</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+                                <div class="music-box style-1 bg-lightpurple">
+                                    <div class="dz-media">
+                                        <img src="{% static 'w3music/images/music-media/pic4.jpg' %}" alt="/">
+                                    </div>
+                                    <div class="dz-info">
+                                        <h6 class="title"><a href="{% url 'w3music:compact-album-single' %}">Celestial Echoes</a></h6>
+                                        <div class="d-flex align-items-center">
+                                            <img src="{% static 'w3music/images/music-media/small/pic1.png' %}" alt="/">
+                                            <span>Isolde Moonbrook</span>
+                                        </div>
+                                        <div class="dz-meta">
+                                            <ul>
+                                                <li class="post-author">Album</li>
+                                                <li class="post-date">2023</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="music-player">
+                                        <div class="left-content">
+                                            <span class="heart"></span>
+                                            <a href="#" download="{% static 'w3music/song/song4.mp3' %}"><i class="flaticon flaticon-download-circular-button"></i></a>
+                                            <a  href="javascript:void(0)"><i class="flaticon flaticon-option"></i></a>
+                                        </div>
+                                        <div class="right-content">
+                                            <a  href="javascript:void(0)"><i class="flaticon flaticon-shuffle"></i></a>
+                                            <audio class="track">
+                                            <source src="{% static 'w3music/song/song4.mp3' %}" type="audio/mp3">
+                                            </audio>
+                                            <div class="player-container">
+                                            <div class="play-pause play">Play</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30 ">
+                                <div class="music-box style-1 bg-lightgray">
+                                    <div class="dz-media">
+                                        <img src="{% static 'w3music/images/music-media/pic5.jpg' %}" alt="/">
+                                    </div>
+                                    <div class="dz-info">
+                                        <h6 class="title"><a href="{% url 'w3music:compact-album-single' %}">Dawn Chorus</a></h6>
+                                        <div class="d-flex align-items-center">
+                                            <img src="{% static 'w3music/images/music-media/small/pic1.png' %}" alt="/">
+                                            <span>Elara Stardust</span>
+                                        </div>
+                                        <div class="dz-meta">
+                                            <ul>
+                                                <li class="post-author">Album</li>
+                                                <li class="post-date">2023</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="music-player">
+                                        <div class="left-content">
+                                            <span class="heart"></span>
+                                            <a href="#" download="{% static 'w3music/song/song5.mp3' %}"><i class="flaticon flaticon-download-circular-button"></i></a>
+                                            <a  href="javascript:void(0)"><i class="flaticon flaticon-option"></i></a>
+                                        </div>
+                                        <div class="right-content">
+                                            <a  href="javascript:void(0)"><i class="flaticon flaticon-shuffle"></i></a>
+                                            <audio class="track">
+                                            <source src="{% static 'w3music/song/song5.mp3' %}" type="audio/mp3">
+                                            </audio>
+                                            <div class="player-container">
+                                            <div class="play-pause play">Play</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+                                <div class="music-box style-1 bg-darkgreen">
+                                    <div class="dz-media">
+                                        <img src="{% static 'w3music/images/music-media/pic6.jpg' %}" alt="/">
+                                    </div>
+                                    <div class="dz-info">
+                                        <h6 class="title"><a href="{% url 'w3music:compact-album-single' %}">Neon Serenade</a></h6>
+                                        <div class="d-flex align-items-center">
+                                            <img src="{% static 'w3music/images/music-media/small/pic1.png' %}" alt="/">
+                                            <span>Orion Emberwind</span>
+                                        </div>
+                                        <div class="dz-meta">
+                                            <ul>
+                                                <li class="post-author">Album</li>
+                                                <li class="post-date">2023</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="music-player">
+                                        <div class="left-content">
+                                            <span class="heart"></span>
+                                            <a href="#" download="{% static 'w3music/song/song6.mp3' %}"><i class="flaticon flaticon-download-circular-button"></i></a>
+                                            <a  href="javascript:void(0)"><i class="flaticon flaticon-option"></i></a>
+                                        </div>
+                                        <div class="right-content">
+                                            <a  href="javascript:void(0)"><i class="flaticon flaticon-shuffle"></i></a>
+                                            <audio class="track">
+                                            <source src="{% static 'w3music/song/song6.mp3' %}" type="audio/mp3">
+                                            </audio>
+                                            <div class="player-container">
+                                            <div class="play-pause play">Play</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            <!-- blog section -->	
+            
+            <!-- about section -->	
+      <!--      <div class="section-wrapper1">
+                <section class="content-inner-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12 p-lg-0">
+                                <div class="about-box style-2 bg-dark wow bounceInLeft" data-wow-delay="0.2s">
+                                    <h5 class="title">Need a Quality Sound ?</h5>
+                                    <p class="text">We deliver the very best service and amenities signed artists andindependent musicians. book session now</p>
+                                    <a href="{% url 'w3music:about-us' %}" class="btn btn-white btn-hover-1 rounded-0 m-b20"><span>DISCOVER MORE</span></a>
+                                    <div class="bottom-content">Get a One Recording Hour For <span>FREE</span></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 p-lg-0">
+                                <div class="about-box style-2 p-0"> 
+                                    <div class="dz-media wow bounceInRight h-100" data-wow-delay="0.4s">
+                                        <img src="{% static 'w3music/images/about/pic2.jpg' %}" alt="/" class="h-100">
+                                        <a class="video video-btn btn-round popup-youtube" href="https://www.youtube.com/watch?v=JL-k3pjN9Nc">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-inner">
+                    <div class="container">
+                        <div class="row justify-content-between align-items-end">
+                            <div class="text-center text-xl-start col-xl-6">
+                                <div class="section-head ">
+                                    <h3 class="sub-title wow flipInX" data-wow-delay="0.2s">Recent Events</h3>
+                                    <h2 class="title wow flipInX" data-wow-delay="0.4s">Melodic Events on the Horizon</h2>
+                                </div>
+                            </div>
+                            <div class="text-center text-xl-start col-xl-6 m-b30 m-lg-b40">
+                                <p class="text m-lg-b15 wow flipInX show" data-wow-delay="0.6s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                <a href="{% url 'w3music:blog-standard' %}" class="btn-link btn-gradient wow flipInX" data-wow-delay="0.8s">VIEW ALL TOUR</a>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="dz-card style-2 blog-half overlay-shine dz-img-effect zoom m-b30 wow flipInX" data-wow-delay="1s">
+                                    <div class="dz-media">
+                                        <a href="{% url 'w3music:blog-standard' %}"><img src="{% static 'w3music/images/blog/grid5/pic1.jpg' %}" alt="/"></a>
+                                        <div class="dz-date">19 <span>JAN</span></div>
+                                    </div>
+                                    <div class="dz-info">
+                                        <h6 class="dz-subtitle"><a href="{% url 'w3music:blog-standard' %}">New York, Music Event</a></h6>
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-standard' %}">Wonderland Beats Festival Graham</a></h5>
+                                        <div class="read-btn">
+                                            <a href="{% url 'w3music:blog-standard' %}" class="btn-link">Read More<i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="dz-card style-2 blog-half overlay-shine dz-img-effect zoom m-b30 wow flipInX" data-wow-delay="1.2s">
+                                    <div class="dz-media">
+                                        <a href="{% url 'w3music:blog-standard' %}"><img src="{% static 'w3music/images/blog/grid5/pic2.jpg' %}" alt="/"></a>
+                                        <div class="dz-date">15 <span>Aug</span></div>
+                                    </div>
+                                    <div class="dz-info">
+                                        <h6 class="dz-subtitle"><a href="{% url 'w3music:blog-standard' %}">New York, Music Event</a></h6>
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-standard' %}">Archieving Results in Music Events</a></h5>
+                                        <div class="read-btn">
+                                            <a href="{% url 'w3music:blog-standard' %}" class="btn-link">Read More<i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="dz-card style-2 blog-half overlay-shine dz-img-effect zoom m-b30 wow flipInX" data-wow-delay="1.4s">
+                                    <div class="dz-media">
+                                        <a href="{% url 'w3music:blog-standard' %}"><img src="{% static 'w3music/images/blog/grid5/pic3.jpg' %}" alt="/"></a>
+                                        <div class="dz-date">21 <span>Sep</span></div>
+                                    </div>
+                                    <div class="dz-info">
+                                        <h6 class="dz-subtitle"><a href="{% url 'w3music:blog-standard' %}">New York, Music Event</a></h6>
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-standard' %}">Why do people hate pop music so much?</a></h5>
+                                        <div class="read-btn">
+                                            <a href="{% url 'w3music:blog-standard' %}" class="btn-link">Read More<i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="dz-card style-2 blog-half overlay-shine dz-img-effect zoom m-b30 wow flipInX" data-wow-delay="1.6s">
+                                    <div class="dz-media">
+                                        <a href="{% url 'w3music:blog-standard' %}"><img src="{% static 'w3music/images/blog/grid5/pic4.jpg' %}" alt="/"></a>
+                                        <div class="dz-date">16 <span>JAN</span></div>
+                                    </div>
+                                    <div class="dz-info">
+                                        <h6 class="dz-subtitle"><a href="{% url 'w3music:blog-standard' %}">New York, Music Event</a></h6>
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-standard' %}">Music's Role in Shaping Our Lives</a></h5>
+                                        <div class="read-btn">
+                                            <a href="{% url 'w3music:blog-standard' %}" class="btn-link">Read More<i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>	-->
+            <!-- about section -->	
+            
+           <!-- <section class="content-inner-3">
+                <div class="container">
+                    <div class="row justify-content-between align-items-end">
+                        <div class="text-center text-xl-start col-xl-6">
+                            <div class="section-head ">
+                                <h3 class="sub-title wow flipInX" data-wow-delay="0.2s">Events</h3>
+                                <h2 class="title wow flipInX" data-wow-delay="0.4s">Upcoming Concerts</h2>
+                            </div>
+                        </div>
+                        <div class="text-center text-xl-end col-xl-6 m-b30 m-lg-b40">
+                            <a href="{% url 'w3music:blog-standard' %}" class="btn-link btn-gradient wow flipInX" data-wow-delay="0.6s">VIEW ALL TOUR</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="row dz-tooltip-blog wow fadeInUp " data-wow-delay="0.8s">
+                        <div class="col-12">
+                            <div class="dz-card style-4 image-tooltip-effect" data-url="{% static 'w3music/images/blog/grid3/pic1.jpg' %}">
+                                <div class="row  dz-info justify-content-between">
+                                    <div class="col-lg-2">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">17:00 - 18:00</a></h5>
+                                        <span class="small-title">pm</span>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">Finding Serenity in Nature</a></h5>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">lother leaxe</a></h5>
+                                        <span class="small-title">Music Director</span>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">Dallas</a></h5>
+                                        <span class="small-title">Black Rock Club</span>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <a href="{% url 'w3music:blog-details' %}" class="btn-link text-secondary"><i class="la la-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="dz-card style-4 image-tooltip-effect" data-url="{% static 'w3music/images/blog/grid3/pic2.jpg' %}">
+                                <div class="row  dz-info justify-content-between">
+                                    <div class="col-lg-2">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">18:00 - 19:00</a></h5>
+                                        <span class="small-title">pm</span>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">the Power of Movement</a></h5>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">lother leaxe</a></h5>
+                                        <span class="small-title">Music Director</span>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">USA</a></h5>
+                                        <span class="small-title">Musical Merriments</span>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <a href="{% url 'w3music:blog-details' %}" class="btn-link text-secondary"><i class="la la-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="dz-card style-4 image-tooltip-effect" data-url="{% static 'w3music/images/blog/grid3/pic3.jpg' %}">
+                                <div class="row dz-info justify-content-between">
+                                    <div class="col-lg-2">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">20:00 - 21:00</a></h5>
+                                        <span class="small-title">pm</span>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">the Gastronomic Adventure</a></h5>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">lother leaxe</a></h5>
+                                        <span class="small-title">Music Director</span>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">New York</a></h5>
+                                        <span class="small-title">Musical Merriments</span>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <a href="{% url 'w3music:blog-details' %}" class="btn-link text-secondary"><i class="la la-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="dz-card style-4 image-tooltip-effect" data-url="{% static 'w3music/images/blog/grid3/pic4.jpg' %}">
+                                <div class="row dz-info justify-content-between">
+                                    <div class="col-lg-2">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">22:00 - 23:00</a></h5>
+                                        <span class="small-title">pm</span>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">Evening Of Laughter</a></h5>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">lother leaxe</a></h5>
+                                        <span class="small-title">Music Director</span>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">New York</a></h5>
+                                        <span class="small-title">Musical Merriments</span>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <a href="{% url 'w3music:blog-details' %}" class="btn-link text-secondary"><i class="la la-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="dz-card style-4 image-tooltip-effect" data-url="{% static 'w3music/images/blog/grid3/pic5.jpg' %}">
+                                <div class="row dz-info justify-content-between">
+                                    <div class="col-lg-2">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">24:00 - 1:00</a></h5>
+                                        <span class="small-title">pm</span>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">Intimate Music Experience</a></h5>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">lother leaxe</a></h5>
+                                        <span class="small-title">Music Director</span>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <h5 class="dz-title"><a href="{% url 'w3music:blog-details' %}">New York</a></h5>
+                                        <span class="small-title">Musical Merriments</span>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <a href="{% url 'w3music:blog-details' %}" class="btn-link text-secondary"><i class="la la-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>-->
+
+            <section class="content-inner-3">
+                <div class="container">
+                    <div class="row justify-content-between align-items-end">
+                        <div class="text-center text-xl-start col-xl-6">
+                            <div class="section-head ">
+                                <span class="sub-title wow flipInX" data-wow-delay="0.2s">Our Life & Party</span>
+                                <h2 class="title wow flipInX" data-wow-delay="0.4s">Recent Posts</h2>
+                            </div>
+                        </div>
+                        <div class="text-center text-xl-end col-xl-6 m-b30 m-lg-b40">
+                            <a href="{% url 'w3music:blog-standard' %}" class="btn-link btn-gradient wow flipInX" data-wow-delay="0.6s">VIEW ALL POSTS</a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+                            <div class="dz-card style-3 overlay-shine dz-img-effect zoom wow fadeInUp" data-wow-delay="0.8s">
+                                <div class="dz-media">
+                                    <a href="{% url 'w3music:blog-standard' %}"><img src="{% static 'w3music/images/blog/grid4/pic1.jpg' %}" alt="/"></a>
+                                </div>
+                                <div class="dz-info">
+                                    <div class="dz-meta">
+                                        <ul>
+                                            <li><a href="javascript:void(0);">26.01.2023</a></li>
+                                            <li class="dz-comment"><a href="javascript:void(0);">8 min Read</a></li>
+                                        </ul>
+                                    </div> 
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-standard' %}">What Style Are There In Music</a></h5>
+                                    <p>It is a long established fact that a reader will  by the readable looking at its layout.</p>
+                                    <div class="card-details">
+                                        <div class="d-flex align-items-center">
+                                            <div class="card-pic">
+                                                <img src="{% static 'w3music/images/blog/small/pic1.png' %}" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h4 class="card-name">Isolde Moonbrook</h4> 
+                                                <span class="card-position">CEO</span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+                            <div class="dz-card style-3 overlay-shine dz-img-effect zoom wow fadeInUp" data-wow-delay="1s">
+                                <div class="dz-media">
+                                    <a href="{% url 'w3music:blog-standard' %}"><img src="{% static 'w3music/images/blog/grid4/pic2.jpg' %}" alt="/"></a>
+                                </div>
+                                <div class="dz-info">
+                                    <div class="dz-meta">
+                                        <ul>
+                                            <li><a href="javascript:void(0);">12.11.2022</a></li>
+                                            <li class="dz-comment"><a href="javascript:void(0);">8 min Read</a></li>
+                                        </ul>
+                                    </div> 
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-standard' %}">Top 10 Cool Young Rock Soloists</a></h5>
+                                    <p>It is a long established fact that a reader will  by the readable looking at its layout.</p>
+                                    <div class="card-details">
+                                        <div class="d-flex align-items-center">
+                                            <div class="card-pic">
+                                                <img src="{% static 'w3music/images/blog/small/pic2.png' %}" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h4 class="card-name">Isolde Moonbrook</h4> 
+                                                <span class="card-position">Event Orgnizer</span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+                            <div class="dz-card style-3 overlay-shine dz-img-effect zoom wow fadeInUp" data-wow-delay="1.2s">
+                                <div class="dz-media">
+                                    <a href="{% url 'w3music:blog-standard' %}"><img src="{% static 'w3music/images/blog/grid4/pic3.jpg' %}" alt="/"></a>
+                                </div>
+                                <div class="dz-info">
+                                    <div class="dz-meta">
+                                        <ul>
+                                            <li><a href="javascript:void(0);">26.12.2021</a></li>
+                                            <li class="dz-comment"><a href="javascript:void(0);">8 min Read</a></li>
+                                        </ul>
+                                    </div> 
+                                    <h5 class="dz-title"><a href="{% url 'w3music:blog-standard' %}">How Do Concerts Affect People?	</a></h5>
+                                    <p>It is a long established fact that a reader will  by the readable looking at its layout.</p>
+                                    <div class="card-details">
+                                        <div class="d-flex align-items-center">
+                                            <div class="card-pic">
+                                                <img src="{% static 'w3music/images/blog/small/pic3.png' %}" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h4 class="card-name">Isolde Moonbrook</h4> 
+                                                <span class="card-position">Director</span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class=" content-inner-1 overflow-hidden">
+            <div class="container">
+                <div class="row justify-content-between align-items-end">
+                    <div class="text-center text-xl-start col-xl-7">
+                        <div class="section-head ">
+                            <h3 class="sub-title wow flipInX w-100" data-wow-delay="0.2s">Upcoming Tours</h3>
+                            <h2 class="title wow flipInX" data-wow-delay="0.4s">Upcoming Tour Dates of Your Favorite Artists!</h2>
+                        </div>
+                    </div>
+                    <div class="text-center text-xl-start col-xl-5 m-b30">
+                        <p class="text m-lg-b15 wow flipInX show" data-wow-delay="0.6s">No More Endlessly Listening To One Person’s Favorite Songs Over And Over. Hang The DJ Is a Collaborative Playlist That,</p>
+                        <a href="{% url 'w3music:blog-standard' %}" class="btn-link btn-gradient wow flipInX" data-wow-delay="0.8s">VIEW ALL TOURS</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-lr30">
+                <div class="swiper artists-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic1.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">Intimate Music Experience</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">01</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic2.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">Rock & roll Concert</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">02</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic3.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">The Best Jazz Songs</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">03</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic4.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">The World Of Blues</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">04</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic5.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">Finding Serenity in Nature</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">05</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic6.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">Rock & roll Concert</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">06</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic7.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">the Power of Movement</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">07</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic8.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">the Gastronomic Adventure</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">08</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.9s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic1.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">Intimate Music Experience</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">09</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="1.0s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic2.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">Rock & roll Concert</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">10</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="1.1s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic3.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">The Best Jazz Songs</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">11</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="1.2s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic4.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">The World Of Blues</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">12</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="1.3s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic5.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">Finding Serenity in Nature</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">13</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="1.4s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic6.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">Rock & roll Concert</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">14</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="1.5s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic7.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">the Power of Movement</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">15</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="1.6s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic8.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">the Gastronomic Adventure</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">16</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <section class=" content-inner-1 overflow-hidden">
+            <div class="container">
+                <div class="row justify-content-between align-items-end">
+                    <div class="text-center text-xl-start col-xl-7">
+                        <div class="section-head ">
+                            <h3 class="sub-title wow flipInX w-100" data-wow-delay="0.2s">Upcoming Tours</h3>
+                            <h2 class="title wow flipInX" data-wow-delay="0.4s">Upcoming Tour Dates of Your Favorite Artists!</h2>
+                        </div>
+                    </div>
+                    <div class="text-center text-xl-start col-xl-5 m-b30">
+                        <p class="text m-lg-b15 wow flipInX show" data-wow-delay="0.6s">No More Endlessly Listening To One Person’s Favorite Songs Over And Over. Hang The DJ Is a Collaborative Playlist That,</p>
+                        <a href="{% url 'w3music:blog-standard' %}" class="btn-link btn-gradient wow flipInX" data-wow-delay="0.8s">VIEW ALL TOURS</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-lr30">
+                <div class="swiper artists-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic1.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">Intimate Music Experience</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">01</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic2.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">Rock & roll Concert</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">02</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic3.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">The Best Jazz Songs</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">03</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic4.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">The World Of Blues</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">04</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic5.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">Finding Serenity in Nature</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">05</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic6.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">Rock & roll Concert</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">06</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic7.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">the Power of Movement</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">07</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic8.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">the Gastronomic Adventure</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">08</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.9s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic1.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">Intimate Music Experience</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">09</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="1.0s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic2.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">Rock & roll Concert</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">10</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="1.1s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic3.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">The Best Jazz Songs</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">11</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="1.2s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic4.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">The World Of Blues</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">12</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="1.3s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic5.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">Finding Serenity in Nature</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">13</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="1.4s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic6.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">Rock & roll Concert</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">14</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="1.5s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic7.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">the Power of Movement</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">15</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="1.6s">
+                            <div class="artists-box style-1" style="background-image:url({% static 'w3music/images/artists/pic8.jpg' %});">
+                                <div class="dz-content">
+                                    <h6 class="date">December 20, 2023</h6>
+                                    <h4 class="title">the Gastronomic Adventure</h4>
+                                </div>
+                                <ul>
+                                    <li class="bottom-title">Concert</li>
+                                    <li class="top-title">16</li>
+                                    <li class="center-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                        <g clip-path="url(#clip0_1338_4909)">
+                                            <path d="M23.2223 16.9925V21.3483L40.6454 21.3483L15.4441 46.5496L18.5554 49.6609L43.7567 24.4596L43.7567 41.8827L48.1125 41.8827V16.9925H23.2223Z" fill="white"/>
+                                        </g>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--
+            <div class="dz-features-wrapper overflow-hidden bg-dark">
+                <ul class="dz-features text-wrapper wow fadeInUp" data-wow-delay="0.4s">
+                    <li class="item">
+                        <h2 class="bg-data-text style-1">
+                            <span>G</span>
+                            <span>E</span>
+                            <span>T</span>
+                            <span>I</span>
+                            <span>N</span>
+                            <span>T</span>
+                            <span>O</span>
+                            <span>U</span>
+                            <span>C</span>
+                            <span>H</span>
+                            <span>.</span>
+                        </h2>
+                    </li>
+                    <li class="item">
+                        <h2 class="title">
+                            GetinTouch.
+                        </h2>
+                    </li>
+                    <li class="item">
+                        <h2 class="bg-data-text style-1">
+                            <span>G</span>
+                            <span>E</span>
+                            <span>T</span>
+                            <span>I</span>
+                            <span>N</span>
+                            <span>T</span>
+                            <span>O</span>
+                            <span>U</span>
+                            <span>C</span>
+                            <span>H</span>
+                            <span>.</span>
+                        </h2>
+                    </li>
+                    <li class="item">
+                        <h2 class="title">
+                            GetinTouch.
+                        </h2>
+                    </li>
+                    <li class="item">
+                        <h2 class="bg-data-text style-1">
+                            <span>G</span>
+                            <span>E</span>
+                            <span>T</span>
+                            <span>I</span>
+                            <span>N</span>
+                            <span>T</span>
+                            <span>O</span>
+                            <span>U</span>
+                            <span>C</span>
+                            <span>H</span>
+                            <span>.</span>
+                        </h2>
+                    </li>
+                    <li class="item">
+                        <h2 class="title">
+                            GetinTouch.
+                        </h2>
+                    </li>
+                    <li class="item">
+                        <h2 class="bg-data-text style-1">
+                            <span>G</span>
+                            <span>E</span>
+                            <span>T</span>
+                            <span>I</span>
+                            <span>N</span>
+                            <span>T</span>
+                            <span>O</span>
+                            <span>U</span>
+                            <span>C</span>
+                            <span>H</span>
+                            <span>.</span>
+                        </h2>
+                    </li>
+                    <li class="item">
+                        <h2 class="title">
+                            GetinTouch.
+                        </h2>
+                    </li>
+                    <li class="item">
+                        <h2 class="bg-data-text style-1">
+                            <span>G</span>
+                            <span>E</span>
+                            <span>T</span>
+                            <span>I</span>
+                            <span>N</span>
+                            <span>T</span>
+                            <span>O</span>
+                            <span>U</span>
+                            <span>C</span>
+                            <span>H</span>
+                            <span>.</span>
+                        </h2>
+                    </li>
+                    <li class="item">
+                        <h2 class="title">
+                            GetinTouch.
+                        </h2>
+                    </li>
+                    <li class="item">
+                        <h2 class="bg-data-text style-1">
+                            <span>G</span>
+                            <span>E</span>
+                            <span>T</span>
+                            <span>I</span>
+                            <span>N</span>
+                            <span>T</span>
+                            <span>O</span>
+                            <span>U</span>
+                            <span>C</span>
+                            <span>H</span>
+                            <span>.</span>
+                        </h2>
+                    </li>
+                    <li class="item">
+                        <h2 class="title">
+                            GetinTouch.
+                        </h2>
+                    </li>
+                    <li class="item">
+                        <h2 class="bg-data-text style-1">
+                            <span>G</span>
+                            <span>E</span>
+                            <span>T</span>
+                            <span>I</span>
+                            <span>N</span>
+                            <span>T</span>
+                            <span>O</span>
+                            <span>U</span>
+                            <span>C</span>
+                            <span>H</span>
+                            <span>.</span>
+                        </h2>
+                    </li>
+                    <li class="item">
+                        <h2 class="title">
+                            GetinTouch.
+                        </h2>
+                    </li>
+                    <li class="item">
+                        <h2 class="bg-data-text style-1">
+                            <span>G</span>
+                            <span>E</span>
+                            <span>T</span>
+                            <span>I</span>
+                            <span>N</span>
+                            <span>T</span>
+                            <span>O</span>
+                            <span>U</span>
+                            <span>C</span>
+                            <span>H</span>
+                            <span>.</span>
+                        </h2>
+                    </li>
+                </ul>
+            </div>
+-->
+        </div>
+{% endblock %}

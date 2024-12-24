@@ -1,0 +1,71 @@
+{% load static %}
+
+	<footer class="site-footer style-2 bg-dark" id="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-6  col-md-12">
+						<div class="footer-logo">
+							<a href="{% url 'w3music:index' %}" class="logo-white"><img src="{% static 'w3music/images/logo-white.png' %}" alt="/"></a>
+						</div>
+						<h2 class="footer-title">We Develop & Create Music <span>Platforms</span></h2>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-12">
+							<h6 class="footer-subtitle">Address</h6>
+							<p class="text"><span>Germany</span> 785 15h Street, Office 478 Berlin, De 81566</p>	
+						<div class="dz-social-icon style-1 dz-hover-move white m-b30">
+							<ul>									
+								<li style="transform: translate(0px, 0px) scale(1);">
+									<a target="_blank" href="https://www.facebook.com/dexignzone/">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li style="transform: translate(-0.1px, 0px) scale(1);">
+									<a target="_blank" href="https://twitter.com/dexignzones">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li style="transform: translate(0px, 0px) scale(1);">
+									<a target="_blank" href="https://www.instagram.com/dexignzone/">
+										<i class="fab fa-instagram"></i>
+									</a>
+								</li>
+								<li style="transform: translate(0px, 0px) scale(1);">
+									<a target="_blank" href="https://www.youtube.com/channel/UCGL8V6uxNNMRrk3oZfVct1g">
+										<i class="fab fa-youtube"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-12">
+						<h6 class="footer-subtitle">Say Hello</h6>
+						<span class="infogmail">Demo@gmail.com</span>
+						<span class="number">+1012 3456 789</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer Bottom Part -->
+		<div class="container">
+			<div class="footer-bottom">
+				<div class="row">
+					<div class="col-xl-8 col-lg-7 col-md-12">
+						<div class="footer-menu">
+							<ul class="">
+								<li class="active"><a href="{% url 'w3music:index' %}">Home</a></li>
+								<li><a href="{% url 'w3music:about-us' %}">About</a></li>
+								<li><a href="{% url 'w3music:services' %}">Services</a></li>
+								<li><a href="{% url 'w3music:events' %}">Events</a></li>
+								<li><a href="{% url 'w3music:blog-details' %}">Blog</a></li>
+								<li><a href="{% url 'w3music:contact-us' %}">Contact us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-5 col-md-12 text-lg-end">
+						<span class="copyright-text"><a href="https://dexignzone.com/" target="_blank">Dexignzone</a> © <span class="current-year">2024</span>. All Rights Reserved.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>

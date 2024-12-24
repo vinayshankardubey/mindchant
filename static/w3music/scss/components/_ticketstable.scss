@@ -1,0 +1,313 @@
+.tickets-wrapper{
+	&.style-1{
+		padding:20px;
+		background:#EDEDED;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+		transition:0.5s;
+		.effect{
+			position: absolute;
+			display: block;
+			width: 0;
+			height: 0;
+			border-radius: 50%;
+			transition: width .4s ease-in-out,height .4s ease-in-out;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			z-index: -1;
+			background: var(--gradient);
+		}
+		&.active,
+		&:hover{
+			transform: translateY(-10px);
+			.top-title,
+			.title,
+			.text,
+			ul > li{
+				color: #fff !important;
+			}
+			.dz-info {
+			}
+			.sub-title{
+				-webkit-text-stroke:1px #fff !important;
+			}
+			.effect{
+				width: 300%;
+				height: 300%;
+			}
+			.tickets-info{
+				.barcode{
+					img{
+						transform: scale(1);
+					}	
+				}
+			}
+		}
+		
+		
+		.dz-media{
+		    margin-bottom: 10px;
+		}	
+		.dz-info{
+			.line{
+				background: var(--secondary);
+				height: 1px;
+				width: 100%;
+				width: -webkit-fill-available;
+				margin-bottom: 5px;
+			}
+			.top-title{
+				color:var(--title);
+				font-size: 18px;
+				font-weight: 500;
+				width: 60%;
+			}
+			.sub-title{
+				-webkit-text-stroke: 1px var(--title);
+				color: transparent;
+				font-size: 30px;
+				font-weight: 700;
+				margin: 10px 0;
+				@include respond('tab-port'){
+					font-size:24px;
+				}
+			}
+			.title{
+				font-size: 50px;
+				font-weight: 700;
+				line-height: 1;
+				@include respond('tab-land'){
+					font-size: 38px;
+				}
+				@include respond('tab-port'){
+					font-size:32px;
+				}
+			}
+		}
+		.tickets-info{
+			.text{
+				font-weight: 400;
+				font-size: 14px;
+				border-left: 0 !important;	
+			}
+			ul{
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			width: 100%;
+				li{
+					font-size: 14px;
+					font-weight: 500;
+					color:var(--title);
+				}
+				.price{
+					text-align: end;
+					margin-left: auto;
+
+				}
+			}
+			.barcode{
+				padding:20px;
+				background:#fff;
+				@include respond('tab-land'){
+					padding:10px;
+				}
+			}
+		}
+	}
+	&.style-2{	
+		background: #D3D3D3;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+		transition: 0.5s;
+		display: flex;
+		gap: 10px;
+		padding: 10px;
+		align-items: center;
+		@include respond('tab-land'){
+			gap:0;
+		}
+		@include respond('phone'){
+			flex-direction: column-reverse;
+			display: flex;
+			padding-top: 30px;
+		}
+		.effect{
+			position: absolute;
+			display: block;
+			width: 0;
+			height: 0;
+			border-radius: 50%;
+			transition: width .4s ease-in-out,height .4s ease-in-out;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			z-index: -1;
+			background: var(--gradient);
+		}
+
+	
+		.dz-info{
+			padding: 0 10px;
+			.sub-title{
+				color: var(--title);
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 1;
+				@include respond('tab-land'){
+					font-size:16px;
+				}
+			}
+			.title{
+				background: var(--gradient);
+				@include backgroundtext;
+				font-family: var(--font-family-base);
+				font-size: 45px;
+				font-weight: 600;
+				line-height: 1.2;
+				margin-bottom: 20px;
+				@include respond('tab-land'){
+					font-size:32px;
+				}
+			}
+			.price{
+				color: var(--title);
+				font-size: 50px;
+				font-weight: 600;
+				line-height: 1;
+				@include respond('tab-port'){
+					font-size:40px;
+				}
+			}
+			.list{
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				li{
+					width:50%;
+					font-size: 15px;
+					margin-bottom: 5px;
+					@include respond('phone'){
+						width:100%;
+					}
+					@include respond('tab-land'){
+						font-size:14px;
+					}
+					i{
+						background: var(--gradient);
+						@include backgroundtext;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+		.tickets-info{
+			 border-right: 1.5px dashed #fff;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+			padding-right: 20px;
+			@include respond('tab-land'){
+				gap: 0px;
+				padding-right: 0;
+			}
+			@include respond('phone'){
+			    gap: 10px;
+				padding-right: 0;
+				transform: rotate(90deg) translate(0%, 0%);
+				height: 100%;
+				width: 30%;
+			}
+			
+			.text{
+				font-weight: 500;
+				font-size: 14px;
+				border-left: 1px solid var(--title);
+				margin: 0;
+				padding-left: 5px;
+				width: 100%;
+				writing-mode: tb-rl;
+				transform: rotate(180deg);
+				margin-bottom: auto;
+				@include respond('phone'){
+				    border-left: 0 !important;
+				}
+			}
+			ul{
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			margin-bottom: auto;
+			writing-mode: tb-rl;
+			transform: rotate(180deg);
+				li{
+					font-size: 14px;
+					font-weight: 400;
+					color:var(--title);
+				}
+			
+			}
+			.barcode{
+				padding:5px;
+				background:#fff;
+				img{
+					max-width: 80px;
+					max-height: 200px;
+					width: 80px;
+					@include respond('tab-land'){
+						max-width: 70px;
+						max-height: 180px;
+						width: 70px;
+					}
+					@include respond('phone'){
+						max-width: 100px;
+						max-height: 230px;
+						width: 80px;
+					}
+				}
+			}
+		}
+	}
+	&.active,
+	&:hover{
+		.top-title,
+		.title,
+		.text,
+		ul > li{
+			color: #fff !important;
+		}
+		.dz-info {
+			.line {
+				background: #fff;
+			}
+			.title{
+				background: #fff;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+			.list li i {
+				background:#fff;
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+		.effect{
+			width: 300%;
+			height: 300%;
+		}
+		.tickets-info{
+			.barcode{
+				img{
+					transform: scale(1);
+				}	
+			}
+			.text{
+				border-left: 1px solid #fff;
+			}
+		}
+	} 
+}

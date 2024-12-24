@@ -1,0 +1,206 @@
+{% extends 'w3music/elements/layouts/layout.html' %}
+{% load static %}
+        
+{% block additional_css %}
+{% endblock %}
+		
+{% block content %}
+		<!-- about section -->	
+		<section class="content-inner-2">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-md-12 col-sm-12 m-b30">
+						<div class="dz-media split-box wow fadeInUp h-100" data-wow-delay="0.2s">
+							<img src="{% static 'w3music/images/about/pic15.jpg' %}" alt="/" class="h-100">
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 col-sm-12 m-b30">
+						<div class="dz-artist-detail style-1">
+							<div class="dz-content">
+								<div class="dz-content-start">	
+									<h4 class="title"><a href="{% url 'w3music:shop-list' %}">Celestia Nova & The Stellar Serenaders</a></h4>
+									<p>There are many variations of passages of Lorem Ipsum the majority have suffered alteration in some form, by humour, or randomised a  words which don't.</p>	
+								</div>
+								<div class="dz-info m-b30">
+									<ul>
+										<li>
+											<strong>Label: </strong>
+											<span> Musica Station</span>
+										</li>
+										<li>
+											<strong>Artist:</strong>
+											<span>Elton John</span>
+										</li>
+										<li>
+											<strong>Release Date:</strong>
+											<span>2023</span>
+										</li>
+										<li>
+											<strong>Genres:</strong>
+											<span> Bad Rock</span>
+										</li>
+										<li>
+											<strong>People:</strong>
+											<span>Kenny Ingram,</span>
+											<span>Leonard Bernstein...,</span>
+										</li>
+									</ul>
+								</div>
+								<h4 class="sm-title ">Available On:</h4>	
+								<div class="dz-social-icon style-1 dz-hover-move dark m-b30">
+									<ul>									
+										<li style="transform: translate(0px, 0px) scale(1);">
+											<a target="_blank" href="https://gaana.com/">
+												<i class="flaticon flaticon-music"></i>
+											</a>
+										</li>
+										<li style="transform: translate(0px, 0px) scale(1);">
+											<a target="_blank" href="https://www.youtube.com/channel/UCGL8V6uxNNMRrk3oZfVct1g">
+												<i class="flaticon flaticon-youtube-1"></i>
+											</a>
+										</li>
+										<li style="transform: translate(0px, 0px) scale(1);">
+											<a target="_blank" href="https://open.spotify.com/?">
+												<i class="flaticon flaticon-spotify"></i>
+											</a>
+										</li>
+										<li style="transform: translate(0px, 0px) scale(1);">
+											<a href="javascript:void(0)">
+												<i class="flaticon flaticon-wave-sound"></i>
+											</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- about section -->	
+		
+		<section class="content-inner-3 overflow-hidden">
+			<div class="container">
+				<div class="d-lg-flex  d-block align-items-end border-bottom m-b30">
+					<div class="section-head  style-1 m-0 flex-1 text-center text-xl-start">
+						<h5 class="sub-title wow flipInX" data-wow-delay="0.2s">Latest Releases</h5>
+						<h2 class="title wow flipInX" data-wow-delay="0.4s">Latest Releases</h2>
+					</div>
+					<div class="m-b30 text-center text-xl-end">
+						<a href="{% url 'w3music:blog-standard' %}" class="btn-link btn-gradient wow flipInX" data-wow-delay="0.6s">VIEW ALL SOLUTION</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12 m-b30 m-lg-b50">
+						<div class="music-box style-1 bg-lightgreen">
+							<div class="dz-media">
+								<img src="{% static 'w3music/images/music-media/pic1.jpg' %}" alt="/">
+							</div>
+							<div class="dz-info">
+								<h6 class="title">Harmony Cascade</h6>
+								<div class="d-flex align-items-center">
+									<img src="{% static 'w3music/images/music-media/small/pic1.png' %}" alt="/">
+									<span>Felix Moonshadow</span>	
+								</div>
+								<div class="dz-meta">
+									<ul>
+										<li class="post-author">Album</li>
+										<li class="post-date">2023</li>
+									</ul>
+								</div>
+							</div>
+							<div class="music-player">
+								<div class="left-content">
+									<span class="heart"></span>
+									<a href="#" download="{% static 'w3music/song/song1.mp3' %}"><i class="flaticon flaticon-download-circular-button"></i></a>
+									<a  href="javascript:void(0)"><i class="flaticon flaticon-option"></i></a>
+								</div>
+								<div class="right-content">
+									<a  href="javascript:void(0)"><i class="flaticon flaticon-shuffle"></i></a>
+									<audio class="track">
+									  <source src="{% static 'w3music/song/song1.mp3' %}" type="audio/mp3">
+									</audio>
+									<div class="player-container">
+									  <div class="play-pause play">Play</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 m-b30 m-lg-b50">
+						<div class="music-box style-1 bg-lightpurple">
+							<div class="dz-media">
+								<img src="{% static 'w3music/images/music-media/pic2.jpg' %}" alt="/">
+							</div>
+							<div class="dz-info">
+								<h6 class="title">Astral Grooves</h6>
+								<div class="d-flex align-items-center">
+									<img src="{% static 'w3music/images/music-media/small/pic1.png' %}" alt="/">
+									<span>Markus Weight</span>	
+								</div>
+								<div class="dz-meta">
+									<ul>
+										<li class="post-author">Album</li>
+										<li class="post-date">2023</li>
+									</ul>
+								</div>
+							</div>
+							<div class="music-player">
+								<div class="left-content">
+									<span class="heart"></span>
+									<a href="#" download="{% static 'w3music/song/song2.mp3' %}"><i class="flaticon flaticon-download-circular-button"></i></a>
+									<a  href="javascript:void(0)"><i class="flaticon flaticon-option"></i></a>
+								</div>
+								<div class="right-content">
+									<a  href="javascript:void(0)"><i class="flaticon flaticon-shuffle"></i></a>
+									<audio class="track">
+									  <source src="{% static 'w3music/song/song2.mp3' %}" type="audio/mp3">
+									</audio>
+									<div class="player-container">
+									  <div class="play-pause play">Play</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 m-b30 m-lg-b50">
+						<div class="music-box style-1 bg-lightgray">
+							<div class="dz-media">
+								<img src="{% static 'w3music/images/music-media/pic3.jpg' %}" alt="/">
+							</div>
+							<div class="dz-info">
+								<h6 class="title">Enchanted Cadence</h6>
+								<div class="d-flex align-items-center">
+									<img src="{% static 'w3music/images/music-media/small/pic1.png' %}" alt="/">
+									<span>Elara Stardust</span>	
+								</div>
+								<div class="dz-meta">
+									<ul>
+										<li class="post-author">Album</li>
+										<li class="post-date">2023</li>
+									</ul>
+								</div>
+							</div>
+							<div class="music-player">
+								<div class="left-content">
+									<span class="heart"></span>
+									<a href="#" download="{% static 'w3music/song/song3.mp3' %}"><i class="flaticon flaticon-download-circular-button"></i></a>
+									<a  href="javascript:void(0)"><i class="flaticon flaticon-option"></i></a>
+								</div>
+								<div class="right-content">
+									<a  href="javascript:void(0)"><i class="flaticon flaticon-shuffle"></i></a>
+									<audio class="track">
+									  <source src="{% static 'w3music/song/song3.mp3' %}" type="audio/mp3">
+									</audio>
+									<div class="player-container">
+									  <div class="play-pause play">Play</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+{% endblock %}

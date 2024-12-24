@@ -1,0 +1,122 @@
+//Blog styles
+.dz-card{
+	&.style-1{
+		position:relative;
+		overflow:hidden;
+		background-color:#F4F5F7;
+		
+		.dz-media {
+			width:100%;
+		    height: 100%;
+			z-index: 1;
+			
+			img{
+				height: 100%;
+				object-fit: cover;
+				width: 100%;
+			}
+			.dz-date {
+				color: #fff;
+				padding: 5px 10px;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				background: var(--gradient);
+				z-index: 0;
+				text-align: center;
+				font-family: var(--font-family-base);
+				font-size: 36px;
+				font-weight: 600;
+				line-height: 1.2;
+				span{
+					display: block;
+					font-size: 16px;
+					font-weight: 500;
+				}
+			}
+		}
+		.dz-meta{
+			ul{
+				li{
+					&:not(:last-child)::after {
+						content: "";
+						height: 6px;
+						width: 6px;
+						position: absolute;
+						right: -13px;
+						top: 50%;
+						border-radius: 50%;
+						background-color: var(--bs-body-color);
+						transform: translate(0%, -50%);
+					}
+				}
+			}
+		}
+		.dz-info{
+			background-color:#F4F5F7;
+			padding: 25px 30px;
+			.dz-subtitle{
+				font-family: var(--font-family-base);
+				margin-bottom:10px;
+				color: var(--title);
+				font-size: 18px;
+				font-weight: 500;
+				color:#666;
+			}
+			.dz-title{
+				margin-bottom: 8px;
+				color: var(--title);
+				font-size: 26px;
+				font-weight: 500;
+				text-transform: capitalize;
+			}
+			.btn-link{
+				color: var(--title);
+				text-transform: uppercase;
+				font-weight: 500;
+			}
+		}
+		@include respond('tab-land'){
+			.dz-info{
+				padding:20px;
+			}
+		}
+		&.blog-half{
+			.dz-media {
+				min-width: 272px;
+				width: 272px;
+				min-height: 272px;
+				height: 272px;
+			}
+			.dz-info{
+				padding: 30px 40px;
+				display:flex;
+				flex-direction:column;
+				
+				p{
+					font-size: 16px;
+					line-height: 1.4;
+					margin-bottom: 15px;
+				}
+				.read-btn{
+					margin-top:auto;
+				}
+			}
+			@include respond('phone-land'){
+				.dz-info{
+					padding:20px;
+					.dz-title{
+						font-size:18px;
+					}
+				}
+			}
+			@include respond('phone'){
+				.dz-media {
+					min-width: 100%;
+					width:100%;
+					height:250px;
+				}
+			}
+		}
+	}
+}

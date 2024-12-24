@@ -1,0 +1,130 @@
+// ft-clients
+.site-footer{
+	&.style-2{
+		position: relative;
+		z-index: 2;
+		@include respond('tab-port'){
+			text-align: center;
+		}
+		.footer-logo{
+			margin-bottom: 20px;
+		}
+		.footer-top{
+			padding-bottom: 40px;
+			padding-top: 60px;
+			position: unset;
+			@include respond('tab-port'){
+				padding-bottom:40px;
+			}
+		}
+		.footer-subtitle{
+			color: #FFF;
+			font-size: 20px;
+			font-weight: 400;
+			text-transform: capitalize;
+			margin-bottom:38px;
+		}
+		.footer-title{
+			color: #FFF;
+			font-size: 50px;
+			font-weight: 500;
+			text-transform: capitalize;
+			line-height: 1.2;
+			margin-bottom:0;
+			@include respond('tab-land'){
+				font-size:40px;
+			}
+			@include respond('phone'){
+				font-size:30px;	
+			}
+			span{
+				background: var(--gradient);
+				@include backgroundtext;
+			}
+		}
+		.text{
+			color: #FFF;
+			font-size: 16px;
+			font-weight: 300;
+			width: 80%;
+			@include respond('tab-port'){
+				width: 100%;
+			}
+			span{
+				display: block;
+			}
+		}
+		.infogmail,
+		.number{
+			font-size: 16px;
+			font-weight: 500;
+			color: #fff;
+			display: block;
+			@include respond('tab-port'){
+				margin: auto;
+			}
+		}
+		.infogmail{
+		    border-bottom: 2px solid #fff;
+			width: fit-content;
+			padding-bottom: 5px;
+			margin-bottom: 5px;
+		}
+		.footer-menu{
+			width: max-content;
+			@include respond('tab-port'){
+				margin: auto;
+			}
+			ul{
+				li{
+					margin-right: 50px;
+					display: inline-block;
+					border-bottom:1px solid transparent;
+					@include transitionMedium;
+					@include respond('tab-land'){
+						margin-right: 40px;
+					}
+					&.active,
+					&:hover{
+						border-bottom:1px solid #fff;
+					}
+					a{
+						color: #F1F1F1;
+						font-family:var(--font-family-standard);
+						font-size: 20px;
+						font-weight: 400;
+						@include respond('tab-land'){
+							font-size: 16px;
+						}
+						@include respond('phone'){
+							font-size: 13px;
+						}
+					}
+					@include respond('tab-port'){
+						margin: 0 5px;
+					}
+				}
+			}
+		}
+		.footer-bottom {	
+			border-top: 1px solid #818181;
+			.text > a,
+			.text,
+			.copyright-text > a,
+			.copyright-text {
+				color: #D4D4D4;
+				font-family: var(--font-family-standard);
+				font-size: 16px;
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+

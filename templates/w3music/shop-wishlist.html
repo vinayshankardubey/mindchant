@@ -1,0 +1,122 @@
+{% extends 'w3music/elements/layouts/layout.html' %}
+{% load static %}
+        
+{% block additional_css %}
+{% endblock %}
+		
+{% block content %}
+		<!-- Wishlist Section -->
+		<div class="content-inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 m-b30">
+						<div class="table-responsive">
+							<table class="table check-tbl table-responsive-md">
+								<thead>
+									<tr>
+										<th>Product</th>
+										<th></th>
+										<th>Quantity</th>
+										<th>Price</th>
+										<th>Stock </th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="product-item-img"><img src="{% static 'w3music/images/gallery/small/pic1.jpg' %}" alt="/"></td>
+										<td class="product-item-name">
+											<a href="{% url 'w3music:shop-cart' %}" class="btn btn-sm btn-gradient rounded-0"><span>25% OFF ON THIS ITEM</span></a>
+											<span>Slim Mp3 Music Player with FM Radio, Voice Recorder 80...</span>
+										</td>
+										<td class="product-item-quantity">
+											<div class="btn-quantity  quantity-sm me-3">
+												<input type="text" value="1" name="demo_vertical2">
+											</div>
+										</td>
+										<td class="product-item-price"><span>$236.89</span><del>$300.89</del></td>
+										<td class="product-item-stock text-success">In Stock</td>
+										<td class="product-item-close">
+											<a href="javascript:void(0);" class="bg-dark">
+												<i class="fa-solid fa-cart-shopping"></i>
+											</a>
+											<a href="javascript:void(0);">
+												<i class="fa fa-close"></i>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="product-item-img"><img src="{% static 'w3music/images/gallery/small/pic2.jpg' %}" alt="/"></td>
+										<td class="product-item-name">
+											<a href="{% url 'w3music:shop-cart' %}" class="btn btn-sm btn-gradient rounded-0"><span>25% OFF ON THIS ITEM</span></a>
+											<span>Ear Headphones Bluetooth with Mic, Upto 50 Hours.....</span>
+										</td>
+										<td class="product-item-quantity">
+											<div class="btn-quantity  quantity-sm me-3">
+												<input type="text" value="1" name="demo_vertical2">
+											</div>
+										</td>
+										<td class="product-item-price"><span>$236.89</span><del>$300.89</del></td>
+										<td class="product-item-stock text-primary">Out of Stock</td>
+										<td class="product-item-close">
+											<a href="javascript:void(0);" class="bg-dark">
+												<i class="fa-solid fa-cart-shopping"></i>
+											</a>
+											<a href="javascript:void(0);">
+												<i class="fa fa-close"></i>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="product-item-img"><img src="{% static 'w3music/images/gallery/small/pic3.jpg' %}" alt="/"></td>
+										<td class="product-item-name">
+											<a href="{% url 'w3music:shop-cart' %}" class="btn btn-sm btn-gradient  rounded-0"><span>25% OFF ON THIS ITEM</span></a>
+											<span>W3Music Events T-Shirts Official...</span>
+										</td>
+										<td class="product-item-quantity">
+											<div class="btn-quantity  quantity-sm me-3">
+												<input type="text" value="1" name="demo_vertical2">
+											</div>
+										</td>
+										<td class="product-item-price"><span>$236.89</span><del>$300.89</del></td>
+										<td class="product-item-stock text-success">In Stock</td>
+										<td class="product-item-close">
+											<a href="javascript:void(0);" class="bg-dark">
+												<i class="fa-solid fa-cart-shopping"></i>
+											</a>
+											<a href="javascript:void(0);">
+												<i class="fa fa-close"></i>
+											</a>
+										</td>
+									</tr>
+									<tr>
+									<td class="product-item-img"><img src="{% static 'w3music/images/gallery/small/pic4.jpg' %}" alt="/"></td>
+										<td class="product-item-name">
+											<a href="{% url 'w3music:shop-cart' %}" class="btn btn-sm btn-gradient rounded-0"><span>25% OFF ON THIS ITEM</span></a>
+											<span>MelodyThreads W3Music Official T-Shirts....</span>
+										</td>
+										<td class="product-item-quantity">
+											<div class="btn-quantity  quantity-sm me-3">
+												<input type="text" value="1" name="demo_vertical2">
+											</div>
+										</td>
+										<td class="product-item-price"><span>$236.89</span><del>$300.89</del></td>
+										<td class="product-item-stock text-success">In Stock</td>
+										<td class="product-item-close">
+											<a href="javascript:void(0);" class="bg-dark">
+												<i class="fa-solid fa-cart-shopping"></i>
+											</a>
+											<a href="javascript:void(0);">
+												<i class="fa fa-close"></i>
+											</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Wishlist Section -->
+{% endblock %}

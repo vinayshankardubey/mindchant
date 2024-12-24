@@ -1,0 +1,87 @@
+.icon-bx-wraper{
+	&.style-1{
+		display: flex;
+		.icon-media{
+			margin-right: 10px;
+			i{
+				color: var(--title);
+				font-size: 35px;
+			}
+		}
+		.text{
+			font-size:15px;
+		}
+	}
+}
+.icon-wrapper1{
+	position: relative;
+	box-shadow: 0px 15px 55px rgba(34, 34, 34, 0.15);
+	&::after{
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-color: #fff;
+		border-radius: 10px;
+		z-index: -1;
+	}
+	@include respond('tab-port'){
+		box-shadow: 0px 10px 30px rgba(34, 34, 34, 0.15);
+	}
+}
+
+//MAXIMIZE ICON SCSS ====
+.dz-maximize{
+	width: 40px;	
+	height: 40px;	
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+	background-color: $white;
+	font-size: 24px;
+	color: var(--title);
+	@include transitionMedium;
+	&.top-left{
+		position: absolute;
+		top: 20px;
+		left: 20px;
+	}
+	&.top-right{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+	&.bottom-left{
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+	}
+	&.bottom-right{
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+	}
+	@include respond('phone'){
+		width: 30px;
+		height: 30px;
+		font-size: 18px;
+		&.top-left{
+			top: 10px;
+			left: 10px;
+		}
+		&.top-right{
+			top: 10px;
+			right: 10px;
+		}
+		&.bottom-left{
+			bottom: 10px;
+			left: 10px;
+		}
+		&.bottom-right{
+			bottom: 10px;
+			right: 10px;
+		}
+	}
+}

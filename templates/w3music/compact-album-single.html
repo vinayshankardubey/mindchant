@@ -1,0 +1,315 @@
+{% extends 'w3music/elements/layouts/layout-1.html' %}
+{% load static %}
+        
+{% block additional_css %}
+{% endblock %}
+		
+{% block content %}
+    <div class="page-content bg-white overflow-hidden">
+        
+        <!-- Banner  -->
+        <div class="dz-bnr-inr style-2 " style="background-image:url('{% static 'w3music/images/banner/bnr17.jpg' %}');">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-12">
+                        <div class="dz-bnr-inr-entry">
+                            <h3 class="title">Damián Córdoba - Argentine cuarteto singer</h3>
+                            <div class="dz-player style-2 m-b30" data-src="{% static 'w3music/song/song2.mp3' %}">
+                                <h5 class="title m-b20">Why do people hate pop music so much?</h5>
+                                <button class="dz-play-btn" disabled><span class="dz-play-btnIco"><i class="fa-solid fa-play"></i></span></button>
+                                <button class="dz-play-btn"><span class="dz-play-btnIco"><svg class="svg-inline--fa fa-pause" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pause" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"></path></svg></span></button>
+                                <div class="dzPlayNum">
+                                    <span class="dzPlayCurDuration"></span>
+                                </div>
+                                <div class="dz-player-range">
+                                    <span class="under-dz-player-ranger"></span>
+                                    <input class="dzPlayRange w-100" type="range" min="0" value="0" step="1" disabled><span class="change-dz-player-range"></span>
+                                </div>
+                                <div class="dzPlayNum">
+                                    <span class="dzPlayDuration"></span>
+                                </div>
+                                <div class="dz-volume-container">
+                                    <span class="dzPlayerVolIcon"><i class="fa fa-volume-up"></i></span>
+                                    <div class="dz-player-range-volume">
+                                        <span class="under-dz-player-ranger"></span>
+                                        <input class="dzPlayVol" type="range" min="0" max="1" value="1" step="0.1" disabled><span class="change-dz-player-range"></span>
+                                    </div>
+                                </div>
+                            </div>	
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="dvd-box" style="background-image: url({% static 'w3music/images/about/pic16.jpg' %});">
+                            <img src="{% static 'w3music/images/dvd.png' %}" alt=""> 
+                        </div>	
+                    </div>		
+                </div>
+            </div>
+        </div>
+        <!-- Banner End -->
+                
+        <!-- about section -->	
+        <section class="content-inner-3">
+            <div class="container">
+                <div class="row align-items-baseline">
+                    <div class="col-lg-6 col-md-12 col-sm-12 m-b30">
+                        <h4 class="m-b20">Tracklist</h4>	
+                        <ul class="tracklist">
+                            <li>
+                                <span><a href="{% url 'w3music:artists-list' %}">1. Instant Crush</a></span>
+                                <span><a href="{% url 'w3music:tickets' %}">Buy Track<i class="flaticon flaticon-arrow-upper-right"></i></a></span>	
+                            </li>
+                            <li>
+                                <span><a href="{% url 'w3music:artists-list' %}">2.  New Melodies</a></span>
+                                <span><a href="{% url 'w3music:tickets' %}">Buy Track<i class="flaticon flaticon-arrow-upper-right"></i></a></span>	
+                            </li>
+                            <li>
+                                <span><a href="{% url 'w3music:artists-list' %}">3.  Jazz vocals</a></span>
+                                <span><a href="{% url 'w3music:tickets' %}">Buy Track<i class="flaticon flaticon-arrow-upper-right"></i></a></span>	
+                            </li>
+                            <li>
+                                <span><a href="{% url 'w3music:artists-list' %}">4. blues songs</a></span>
+                                <span><a href="{% url 'w3music:tickets' %}">Buy Track<i class="flaticon flaticon-arrow-upper-right"></i></a></span>	
+                            </li>
+                            <li>
+                                <span><a href="{% url 'w3music:artists-list' %}">5. rock styles</a></span>
+                                <span><a href="javascript:void(0)">Free Downlaod<i class="flaticon flaticon-download"></i></a></span>	
+                            </li>
+                            <li>
+                                <span><a href="{% url 'w3music:artists-list' %}">6. rock styles</a></span>
+                                <span><a href="javascript:void(0)">Free Downlaod<i class="flaticon flaticon-download"></i></a></span>	
+                            </li>
+                        </ul>	
+                        <div class="widget">
+                            <div class="widget-title">
+                                <h4 class="title">available on:</h4>
+                            </div>
+                            <div class="dz-social-icon style-1 dz-hover-move dark ">
+                                <ul>									
+                                    <li style="transform: translate(0px, 0px) scale(1);">
+                                        <a target="_blank" href="https://gaana.com/">
+                                            <i class="flaticon flaticon-music"></i>
+                                        </a>
+                                    </li>
+                                    <li style="transform: translate(0px, 0px) scale(1);">
+                                        <a target="_blank" href="https://www.youtube.com/channel/UCGL8V6uxNNMRrk3oZfVct1g">
+                                            <i class="flaticon flaticon-youtube-1"></i>
+                                        </a>
+                                    </li>
+                                    <li style="transform: translate(0px, 0px) scale(1);">
+                                        <a target="_blank" href="https://open.spotify.com/?">
+                                            <i class="flaticon flaticon-spotify"></i>
+                                        </a>
+                                    </li>
+                                    <li style="transform: translate(0px, 0px) scale(1);">
+                                        <a href="javascript:void(0)">
+                                            <i class="flaticon flaticon-wave-sound"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-container reviews-swiper wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="reviews-box">
+                                        <div class="reviews-info">
+                                            <h4 class="reviews-title">Reviews</h4>
+                                            <p class="text">you already know thoughI walk in the corner with the money on my fingerShe might get it popping, I might wife her for the winterI what already know, already know,</p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h5 class="sub-title">W3Music Club</h5>	
+                                                <div class="review-num d-flex">
+                                                    <ul class="dz-rating me-2 m-l5 d-flex">
+                                                        <li>
+                                                            <svg width="15" height="15" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M6.74805 0.234375L8.72301 4.51608L13.4054 5.07126L9.9436 8.27267L10.8625 12.8975L6.74805 10.5944L2.63355 12.8975L3.5525 8.27267L0.090651 5.07126L4.77309 4.51608L6.74805 0.234375Z" fill="#FF8A00"></path>
+                                                            </svg>
+                                                        </li>	
+                                                        <li>
+                                                            <svg width="15" height="15" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M6.74805 0.234375L8.72301 4.51608L13.4054 5.07126L9.9436 8.27267L10.8625 12.8975L6.74805 10.5944L2.63355 12.8975L3.5525 8.27267L0.090651 5.07126L4.77309 4.51608L6.74805 0.234375Z" fill="#FF8A00"></path>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg width="15" height="15" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M6.74805 0.234375L8.72301 4.51608L13.4054 5.07126L9.9436 8.27267L10.8625 12.8975L6.74805 10.5944L2.63355 12.8975L3.5525 8.27267L0.090651 5.07126L4.77309 4.51608L6.74805 0.234375Z" fill="#FF8A00"></path>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg width="15" height="15" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M6.74805 0.234375L8.72301 4.51608L13.4054 5.07126L9.9436 8.27267L10.8625 12.8975L6.74805 10.5944L2.63355 12.8975L3.5525 8.27267L0.090651 5.07126L4.77309 4.51608L6.74805 0.234375Z" fill="#FF8A00"></path>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg width="15" height="15" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path opacity="0.2" d="M6.74805 0.234375L8.72301 4.51608L13.4054 5.07126L9.9436 8.27267L10.8625 12.8975L6.74805 10.5944L2.63355 12.8975L3.5525 8.27267L0.090651 5.07126L4.77309 4.51608L6.74805 0.234375Z" fill="#E9ECEF"></path>
+                                                            </svg>
+                                                        </li>	
+                                                    </ul>
+                                                    <span class="text-white me-2">1 Review</span>
+                                                </div>
+                                            </div>	
+                                            <div class="num-pagination">
+                                                <div class="reviews-button-prev btn-prev"><i class="fa-solid fa-arrow-left"></i></div>
+                                                <div class="reviews-button-next btn-next"><i class="fa-solid fa-arrow-right"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="reviews-box">
+                                        <div class="reviews-info">
+                                            <h4 class="reviews-title">Reviews</h4>
+                                            <p class="text">you already know thoughI walk in the corner with the money on my fingerShe might get it popping, I might wife her for the winterI what already know, already know,</p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h5 class="sub-title">W3Music Club</h5>	
+                                                <div class="review-num d-flex">
+                                                    <ul class="dz-rating me-2 m-l5 d-flex">
+                                                        <li>
+                                                            <svg width="15" height="15" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M6.74805 0.234375L8.72301 4.51608L13.4054 5.07126L9.9436 8.27267L10.8625 12.8975L6.74805 10.5944L2.63355 12.8975L3.5525 8.27267L0.090651 5.07126L4.77309 4.51608L6.74805 0.234375Z" fill="#FF8A00"></path>
+                                                            </svg>
+                                                        </li>	
+                                                        <li>
+                                                            <svg width="15" height="15" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M6.74805 0.234375L8.72301 4.51608L13.4054 5.07126L9.9436 8.27267L10.8625 12.8975L6.74805 10.5944L2.63355 12.8975L3.5525 8.27267L0.090651 5.07126L4.77309 4.51608L6.74805 0.234375Z" fill="#FF8A00"></path>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg width="15" height="15" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M6.74805 0.234375L8.72301 4.51608L13.4054 5.07126L9.9436 8.27267L10.8625 12.8975L6.74805 10.5944L2.63355 12.8975L3.5525 8.27267L0.090651 5.07126L4.77309 4.51608L6.74805 0.234375Z" fill="#FF8A00"></path>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg width="15" height="15" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M6.74805 0.234375L8.72301 4.51608L13.4054 5.07126L9.9436 8.27267L10.8625 12.8975L6.74805 10.5944L2.63355 12.8975L3.5525 8.27267L0.090651 5.07126L4.77309 4.51608L6.74805 0.234375Z" fill="#FF8A00"></path>
+                                                            </svg>
+                                                        </li>
+                                                        <li>
+                                                            <svg width="15" height="15" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path opacity="0.2" d="M6.74805 0.234375L8.72301 4.51608L13.4054 5.07126L9.9436 8.27267L10.8625 12.8975L6.74805 10.5944L2.63355 12.8975L3.5525 8.27267L0.090651 5.07126L4.77309 4.51608L6.74805 0.234375Z" fill="#E9ECEF"></path>
+                                                            </svg>
+                                                        </li>	
+                                                    </ul>
+                                                    <span class="text-white me-2">1 Review</span>
+                                                </div>
+                                            </div>	
+                                            <div class="num-pagination">
+                                                <div class="reviews-button-prev btn-prev"><i class="fa-solid fa-arrow-left"></i></div>
+                                                <div class="reviews-button-next btn-next"><i class="fa-solid fa-arrow-right"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 m-b30">
+                        <div class="dz-album-detail style-1">
+                            <div class="dz-content">
+                                <h4 class="title text-secondary">Damián Córdoba - Argentine cuarteto singer</h4>
+                                <p class="text">There are many variations of passages of Lorem Ipsum the majority have suffered alteration in some form, by humour, or randomised a  words which don't.</p>
+                                <div class="dz-info">
+                                    <ul class="m-b30">
+                                        <li>
+                                            <strong>Label:</strong>
+                                            <span> Musica Station</span>
+                                        </li>
+                                        <li>
+                                            <strong>Artist:</strong>
+                                            <span>Elton John</span>
+                                        </li>
+                                        <li>
+                                            <strong>Release Date:</strong>
+                                            <span>2023</span>
+                                        </li>
+                                        <li>
+                                            <strong>Genres:</strong>
+                                            <span> Bad Rock</span>
+                                        </li>
+                                        <li>
+                                            <strong>People:</strong>
+                                            <span>Kenny Ingram,</span>
+                                            <span>Leonard Bernstein...,</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <h4 class="sm-title m-b20">Available Lyrics</h4>	
+                                <div class="accordion dz-accordion style-2 m-b30" id="accordionFaq1">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1">
+                                            <a href="#" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                                Saint Jhn - Roses
+                                                <span class="toggle-close"></span>
+                                            </a>
+                                        </h2>
+                                        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionFaq1">
+                                            <div class="accordion-body">
+                                                <p class="m-b15">RosesI walked in the corner with the body screaming doloNever sold a bag but look like Pablo in a photoThis gon' make 'em feel the way like Tony killed ManoloYou already know though, need is roses</p>
+                                                <p class="m-b15">you already know thoughI walk in the corner with the money on my fingerShe might get it popping, I might wife her for the winterI what already know, already know,</p>
+                                                <p class="m-b15">RosesI walked in the corner with the body screaming doloNever sold a bag but look like Pablo in a photoThis gon' make 'em feel the way like Tony killed ManoloYou already know though, need is roses</p>
+                                                <p class="m-b15">you already know thoughI walk in the corner with the money on my fingerShe might get it popping, I might wife her for the winterI what already know, already know,</p>
+                                            </div>
+                                        </div>
+                                    </div>							
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2">
+                                            <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                Do I have To be Local To Work With You?
+                                                <span class="toggle-close"></span>
+                                            </a>
+                                        </h2>
+                                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionFaq1">
+                                            <div class="accordion-body">
+                                                <p class="m-b15">RosesI walked in the corner with the body screaming doloNever sold a bag but look like Pablo in a photoThis gon' make 'em feel the way like Tony killed ManoloYou already know though, need is roses</p>
+                                                <p class="m-b15">you already know thoughI walk in the corner with the money on my fingerShe might get it popping, I might wife her for the winterI what already know, already know,</p>
+                                                <p class="m-b15">RosesI walked in the corner with the body screaming doloNever sold a bag but look like Pablo in a photoThis gon' make 'em feel the way like Tony killed ManoloYou already know though, need is roses</p>
+                                                <p class="m-b15">you already know thoughI walk in the corner with the money on my fingerShe might get it popping, I might wife her for the winterI what already know, already know,</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading3">
+                                            <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                                What is your creative work process?
+                                                <span class="toggle-close"></span>
+                                            </a>
+                                        </h2>
+                                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionFaq1">
+                                            <div class="accordion-body">
+                                                <p class="m-b15">RosesI walked in the corner with the body screaming doloNever sold a bag but look like Pablo in a photoThis gon' make 'em feel the way like Tony killed ManoloYou already know though, need is roses</p>
+                                                <p class="m-b15">you already know thoughI walk in the corner with the money on my fingerShe might get it popping, I might wife her for the winterI what already know, already know,</p>
+                                                <p class="m-b15">RosesI walked in the corner with the body screaming doloNever sold a bag but look like Pablo in a photoThis gon' make 'em feel the way like Tony killed ManoloYou already know though, need is roses</p>
+                                                <p class="m-b15">you already know thoughI walk in the corner with the money on my fingerShe might get it popping, I might wife her for the winterI what already know, already know,</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading4">
+                                            <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                                Who will work on my webdesign project?
+                                                <span class="toggle-close"></span>
+                                            </a>
+                                        </h2>
+                                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionFaq1">
+                                            <div class="accordion-body">
+                                                <p class="m-b15">RosesI walked in the corner with the body screaming doloNever sold a bag but look like Pablo in a photoThis gon' make 'em feel the way like Tony killed ManoloYou already know though, need is roses</p>
+                                                <p class="m-b15">you already know thoughI walk in the corner with the money on my fingerShe might get it popping, I might wife her for the winterI what already know, already know,</p>
+                                                <p class="m-b15">RosesI walked in the corner with the body screaming doloNever sold a bag but look like Pablo in a photoThis gon' make 'em feel the way like Tony killed ManoloYou already know though, need is roses</p>
+                                                <p class="m-b15">you already know thoughI walk in the corner with the money on my fingerShe might get it popping, I might wife her for the winterI what already know, already know,</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about section -->	
+    </div>
+{% endblock %}

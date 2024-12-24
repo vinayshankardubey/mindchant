@@ -1,0 +1,241 @@
+//shopcheckout
+.shop-checkout{
+	.form-select{
+		padding:4px 20px;
+		border:none;
+		border-radius: 0;
+		padding-left: 0;
+		padding-right: 0;
+		button{
+			padding-left:20px;
+		}
+	}
+	.form-group{
+		.form-check-input{
+			margin:5px 5px 0 0; 
+			border: 1px solid #24262B;
+			border-radius: var(--border-radius-base);	
+			&:checked{
+				border-color:var(--primary);
+			}
+		}
+		.form-check-label{
+			font-weight: 500;
+			font-size: 18px;
+			color: #24262B;
+			text-transform: capitalize;
+		}
+	}
+	.dz-accordion{
+		.accordion-item{
+			margin-bottom:15px;
+			.accordion-header{
+				.accordion-button{
+					background: #F5F5F5;
+					border: none;
+					font-size: 18px;
+					text-transform: capitalize;
+					span{
+						font-size: 16px;
+						background: var(--gradient);
+						background-clip: text;
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+					}
+					.toggle-close{
+						right:10px;
+						&:after {
+							color:var(--primary);
+							@include transitionSlow;
+							font-size:16px;
+							content:"\f106";
+						}
+					}
+					&.collapsed {
+						.toggle-close{
+							&:after {
+								content:"\f107";
+							}
+						}
+					}
+					@include respond('phone'){
+						align-items: start;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.order-detail{
+	padding:30px;
+	background-color:#F6F6F6;
+	@include respond('phone'){
+		padding:15px;
+	}
+	.detail-head{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 1px solid #D4D4D4;
+		padding-bottom: 20px;
+		margin-bottom: 25px;
+			.title{
+				margin:0;
+			}
+	}
+	.dz-accordion{
+		.accordion-item{
+			background:transparent;
+			.accordion-header{
+				.accordion-button{
+					padding:0;
+					
+					background-color:transparent;
+					.form-check-input{
+					    width: 20px;
+						height: 20px;
+						margin-right: 10px;
+						margin-top: 0;
+						border: 1px solid var(--secondary);
+						&:checked {
+							background-color: #fff;
+							border-color: #fff;
+							border: 1px solid var(--secondary);
+						}
+						&:checked[type="radio"] {
+							--bs-form-check-bg-image: url(
+							  "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23000'/%3e%3c/svg%3e");
+						}
+					}
+					.form-check-label{
+						
+						font-weight: 500;
+						font-size: 18px; 
+					}
+					img{
+						margin: 0 12px;
+					}
+					a{
+						font-weight: 400;
+						font-size: 12px;
+						text-decoration: underline;
+						color: #5E626F;
+					}
+				}
+			}
+			.accordion-body{
+				padding:8px 0;
+				p{
+					font-weight: 400;
+					font-size: 13px;
+					font-family: 'Roboto';
+				}
+			}
+		}
+	}
+	.text{
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 20px;
+		padding-top:15px;
+		border-top: 1px solid #D7D7D7;
+		a{
+			text-decoration:underline;
+			color:var(--primary);
+		}
+	}
+	.form-group{
+		.form-check-input{
+			width: 19px;
+			height: 16px;
+			margin-right: 10px;
+			border-radius: 0;	
+		}
+		.form-check-label{
+			font-weight: 400;
+			font-size: 13px;
+			font-family: 'Roboto';
+			color: #5E626F;
+		}
+	}
+	table {
+		width:100%;
+		tr {
+			td {
+				padding: 5px 0;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 18px;
+				color: var(--bs-body-color);
+				&.price{
+					text-align:end;
+				}
+			}
+			&.title{
+				border-bottom:none;
+				td{
+					padding-bottom:0;
+				}
+			}
+			&.shipping{
+				td{
+					.custom-checkbox{
+						.form-check-label{
+							font-size:14px;
+							line-height:30px;
+						}
+					}
+					&.price{
+						vertical-align:bottom;
+					}
+				}
+			}
+			&.total{
+				border-bottom:none;
+				td{
+					padding:15px 0;
+					&.price{
+						font-size: 24px;
+					}
+				}
+			}
+		}
+	}			  
+}
+.cart-item{
+	&.style-1{	
+		display: flex;
+		align-items: center;
+		padding-bottom: 25px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		.dz-media{
+			width: 100%;
+			margin-right: 15px;
+		}
+		
+		.dz-content{
+			.title{
+				font-weight:500;		
+			}
+			.text,
+			.qty{
+				display: block;
+				border: 0;
+				padding: 0;
+				margin-bottom: 0;
+				font-size: 16px;
+			}
+			.price{
+				font-size:18px;
+				font-weight:500;
+				color:var(--title);
+				display:block;
+			}
+		}
+		
+	}
+	
+}

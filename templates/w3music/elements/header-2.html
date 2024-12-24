@@ -1,0 +1,470 @@
+{% load static %}
+
+    <header class="site-header mo-left header header-text-white header-transparent style-1 border-white">					
+        <!-- Main Header -->
+        <div class="sticky-header main-bar-wraper navbar-expand-lg">
+            <div class="main-bar clearfix">
+                <div class="container-fluid clearfix d-lg-flex d-block">
+                    <!-- Website Logo -->
+                    <div class="logo-header mostion">
+                        <a href="{% url 'w3music:index' %}" class="logo-dark"><img src="{% static 'w3music/images/logo.png' %}" alt="/"></a>
+                        <a href="{% url 'w3music:index' %}" class="logo-white"><img src="{% static 'w3music/images/logo-white.png' %}" alt="/"></a>
+                    </div>
+                    
+                    <!-- Nav Toggle Button -->
+                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                
+                    <!-- Main Nav -->
+                    <div class="header-nav navbar-collapse collapse justify-content-center" id="navbarNavDropdown">
+                        <div class="logo-header">
+                            <a href="{% url 'w3music:index' %}" class="logo-dark"><img src="{% static 'w3music/images/logo.png' %}" alt="/"></a>
+                        </div>
+                        <ul class="nav navbar-nav dark-nav">
+                            <li class="has-mega-menu sub-menu-down">
+                                <a href="javascript:void(0);"><span>Home</span><i class="fas fa-chevron-down tabindex"></i></a>
+                                <div class="mega-menu demo-menu">
+                                    <div class="row"> 
+                                        <div class="col-md-3 col-6"><a href="{% url 'w3music:index' %}"><img src="{% static 'w3music/images/demo/demo1.png' %}" alt="/"><span class="menu-title">01 Home Page</span></a></div>
+                                        <div class="col-md-3 col-6"><a href="{% url 'w3music:index-2' %}"><img src="{% static 'w3music/images/demo/demo2.png' %}" alt="/"><span class="menu-title">02 Home Page</span></a></div>
+                                        <div class="col-md-3 col-6"><a href="{% url 'w3music:index-3' %}"><img src="{% static 'w3music/images/demo/demo3.png' %}" alt="/"><span class="menu-title">03 Home Page</span></a></div>
+                                        <div class="col-md-3 col-6"><a href="{% url 'w3music:index-4' %}"><img src="{% static 'w3music/images/demo/demo4.png' %}" alt="/"><span class="menu-title">04 Home Page</span></a></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="has-mega-menu sub-menu-down">
+                                <a href="javascript:void(0);"><span>Pages</span><i class="fas fa-chevron-down tabindex"></i></a>
+                                <div class="mega-menu">
+                                    <div class="row justify-content-md-between"> 
+                                        <div class="col-lg col-md-3 col-sm-4 col-6"> 
+                                            <a href="javascript:;" class="menu-title">Pages</a>
+                                            <ul>
+                                                <li><a href="{% url 'w3music:about-us' %}">About Us</a></li>
+                                                <li><a href="{% url 'w3music:about-me' %}">About Me</a></li>
+                                                <li><a href="{% url 'w3music:faqs' %}">Faqs</a></li>
+                                                <li><a href="{% url 'w3music:tickets' %}">Tickets</a></li>
+                                                <li><a href="{% url 'w3music:team' %}">team</a></li>
+                                                <li><a href="{% url 'w3music:artists-list' %}">Artists List</a></li>
+                                                <li><a href="{% url 'w3music:artists-single' %}">Artists Single</a></li>
+                                                <li><a href="{% url 'w3music:services' %}">Services</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="col-lg col-md-3 col-sm-4 col-6"> 
+                                            <a href="javascript:;" class="menu-title">Events Pages</a>
+                                            <ul>
+                                                <li><a href="{% url 'w3music:events' %}">Events</a></li>
+                                                <li><a href="{% url 'w3music:events-list' %}">Events List</a></li>
+                                                <li><a href="{% url 'w3music:events-table' %}">Events Table</a></li>
+                                                <li><a href="{% url 'w3music:events-detail' %}">Events Detail</a></li>
+                                            </ul>
+                                            <a href="javascript:;" class="menu-title pt-3">Album Pages</a>
+                                            <ul>
+                                                <li><a href="{% url 'w3music:compact-album-single' %}">Compact Single</a></li>
+                                                <li><a href="{% url 'w3music:minimal-album-single' %}">Minimal Single</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-sm-4 col-6"> 
+                                            <a href="javascript:;" class="menu-title">Gallery Pages</a>
+                                            <ul>						
+                                                <li><a href="{% url 'w3music:gallery-2-columns' %}">Gallery 2 Column</a></li>
+                                                <li><a href="{% url 'w3music:gallery-3-columns' %}">Gallery 3 Column</a></li>
+                                                <li><a href="{% url 'w3music:gallery-4-columns' %}">Gallery 4 Column</a></li>
+                                                <li><a href="{% url 'w3music:gallery-4-columns-wide' %}">Gallery 4 wide Column</a></li>
+                                                <li><a href="{% url 'w3music:gallery-5-columns-wide' %}">Gallery 5 Wide Column</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-sm-4 col-6"> 
+                                            <a href="javascript:;" class="menu-title">Standard Pages</a>
+                                            <ul>						
+                                                <li><a href="{% url 'w3music:standard-2-columns' %}">Standard 2 Column</a></li>
+                                                <li><a href="{% url 'w3music:standard-3-columns' %}">Standard 3 Column</a></li>
+                                                <li><a href="{% url 'w3music:standard-4-columns' %}">Standard 4 Column</a></li>
+                                                <li><a href="{% url 'w3music:standard-4-columns-wide' %}">Standard 4 Wide Column</a></li>
+                                                <li><a href="{% url 'w3music:standard-5-columns-wide' %}">Standard 5 Wide Column</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-sm-4 col-6"> 
+                                            <a href="javascript:;" class="menu-title">Web Pages</a>
+                                            <ul>
+                                                <li><a href="{% url 'w3music:error-404' %}">Error 404</a></li>
+                                                <li><a href="{% url 'w3music:under-maintenance' %}">Under Maintenance</a></li>
+                                                <li><a href="{% url 'w3music:coming-soon' %}">Coming Soon</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="has-mega-menu sub-menu-down">
+                                <a href="javascript:void(0);"><span>Shop</span><i class="fas fa-chevron-down tabindex"></i></a>
+                                <div class="mega-menu shop-menu">
+                                    <div class="row"> 
+                                        <div class="col-lg-8 col-md-12 col-sm-12"> 
+                                            <div class="row"> 
+                                                <div class="col-md-4 col-sm-4 col-6"> 
+                                                    <a href="javascript:;" class="menu-title">Shop Pages</a>
+                                                    <ul>						
+                                                        <li><a href="{% url 'w3music:shop-cart' %}">Shop Cart</a></li>
+                                                        <li><a href="{% url 'w3music:shop-wishlist' %}">Shop Wishlist</a></li>
+                                                        
+                                                        <li><a href="{% url 'w3music:shop-checkout' %}">Shop Checkout</a></li>
+                                                        <li><a href="{% url 'w3music:shop-my-account' %}">My Account</a></li>
+                                                        <li><a href="{% url 'w3music:shop-registration' %}">Shop Registration</a></li>
+                                                        <li><a href="{% url 'w3music:product-detail' %}">Product Detail</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-6"> 
+                                                    <a href="javascript:;" class="menu-title">Shop Style</a>
+                                                    <ul>						
+                                                        <li><a href="{% url 'w3music:shop-sidebar' %}">Shop Sidebar</a></li>
+                                                        <li><a href="{% url 'w3music:shop-3-column' %}">Shop 3 Column</a></li>
+                                                        <li><a href="{% url 'w3music:shop-4-column' %}">Shop 4 Column</a></li>
+                                                        <li><a href="{% url 'w3music:shop-wide-4-column' %}">Shop Wide 4 Column</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="month-deal">
+                                                        <div>
+                                                            <h3>Events of the month</h3>
+                                                            <p class="mb-0">Sound and Lighting Equipment Rental</p>
+                                                        </div>
+                                                        <div class="sale-countdown">
+                                                            <div class="countdown text-center">
+                                                                <div class="date"><span class="time days text-primary"></span>
+                                                                    <span class="work-time">Days</span>
+                                                                </div>
+                                                                <div class="date"><span class="time hours text-primary"></span>
+                                                                    <span class="work-time">Hours</span>
+                                                                </div>
+                                                                <div class="date"><span class="time mins text-primary"></span>
+                                                                    <span class="work-time">Minutess</span>
+                                                                </div>
+                                                                <div class="date"><span class="time secs text-primary"></span>
+                                                                    <span class="work-time">Second</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 d-none d-lg-block">
+                                            <div class="adv-media"><img src="{% static 'w3music/images/adv-1.png' %}" alt="/"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="has-mega-menu sub-menu-down">
+                                <a href="javascript:void(0);"><span>Blog</span><i class="fas fa-chevron-down tabindex"></i></a>
+                                <div class="mega-menu">
+                                    <div class="row"> 
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-6"> 
+                                            <a href="javascript:;" class="menu-title">Blog Sidebar</a>
+                                            <ul>
+                                                <li><a href="{% url 'w3music:blog-grid-left-sidebar' %}">Blog Grid Left Sidebar</a></li>
+                                                <li><a href="{% url 'w3music:blog-grid-right-sidebar' %}">Blog Grid Right Sidebar</a></li>
+                                                <li><a href="{% url 'w3music:blog-list-left-sidebar' %}">Blog List Left Sidebar</a></li>
+                                                <li><a href="{% url 'w3music:blog-list-right-sidebar' %}">Blog List Right Sidebar</a></li>
+                                                <li><a href="{% url 'w3music:blog-detail-left-sidebar' %}">Blog Detail Left Sidebar</a></li>
+                                                <li><a href="{% url 'w3music:blog-detail-right-sidebar' %}">Blog Detail Right  Sidebar</a></li>
+                                            </ul>													
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-6"> 
+                                            <a href="javascript:;" class="menu-title">Blog Page</a>
+                                            <ul>
+                                                <li><a href="{% url 'w3music:blog-list' %}"> Blog List</a></li>
+                                                <li><a href="{% url 'w3music:blog-grid-2' %}">Blog Grid 2</a></li>
+                                                <li><a href="{% url 'w3music:blog-grid-3' %}">Blog Grid 3</a></li>
+                                                <li><a href="{% url 'w3music:blog-details' %}">Blog Details</a></li>
+                                                <li><a href="{% url 'w3music:blog-open-gutenberg' %}">Blog Open Gutenberg</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-6"> 
+                                            <a href="javascript:;" class="menu-title">Blog single</a>
+                                            <ul>
+                                                <li><a href="{% url 'w3music:blog-standard' %}">Blog Standard</a></li>
+                                                <li><a href="{% url 'w3music:blog-grid-3-masonary' %}">Blog Grid 3 Masonary</a></li>
+                                                <li><a href="{% url 'w3music:blog-grid-4-masonary' %}">Blog Grid 4  Masonary</a></li>
+                                                <li><a href="{% url 'w3music:blog-wide-grid-sidebar' %}">Blog Wide Grid Sidebar</a></li>
+                                                <li><a href="{% url 'w3music:blog-wide-list-sidebar' %}">Blog Wide List Sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-6"> 
+                                            <a href="javascript:;" class="menu-title">Recent Posts</a>
+                                            <div class="widget widget_post pt-2">
+                                                <ul>
+                                                    <li>
+                                                        <div class="dz-media">
+                                                            <img src="{% static 'w3music/images/shop/product/small/pic1.png' %}" alt="">
+                                                        </div>
+                                                        <div class="dz-content">
+                                                            <h6 class="name"><a href="{% url 'w3music:shop-cart' %}">Headphone</a></h6>
+                                                            <span class="time">July 23, 2023</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="dz-media">
+                                                            <img src="{% static 'w3music/images/shop/product/small/pic2.png' %}" alt="">
+                                                        </div>
+                                                        <div class="dz-content">
+                                                            <h6 class="name"><a href="{% url 'w3music:shop-cart' %}">Electro Music Player</a></h6>
+                                                            <span class="time">Aug 15, 2023</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="dz-media">
+                                                            <img src="{% static 'w3music/images/shop/product/small/pic3.png' %}" alt="">
+                                                        </div>
+                                                        <div class="dz-content">
+                                                            <h6 class="name"><a href="{% url 'w3music:shop-cart' %}">Leather jacket</a></h6>
+                                                            <span class="time">Jun 28, 2023</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="{% url 'w3music:contact-us' %}"><span>Contact Us</span></a></li>
+                        </ul>
+                        <div class="dz-social-icon">
+                            <ul>
+                                <li><a target="_blank" href="https://www.facebook.com/dexignzone"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a target="_blank" href="https://twitter.com/dexignzones"><i class="fab fa-twitter"></i></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/showcase/3686700/admin/"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/dexignzone/"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- EXTRA NAV -->
+                    <div class="extra-nav">
+                        <div class="extra-cell">						
+                            <ul class="header-right">
+                                <li class="nav-item search-link">
+                                    <a class="nav-link"  href="javascript:void(0);" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item menu-btn">
+                                    <a href="javascript:void(0);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                                        <path d="M2.91406 7.29134C2.91406 6.48488 3.5674 5.83301 4.3724 5.83301H23.3307C24.1357 5.83301 24.7891 6.48488 24.7891 7.29134C24.7891 8.0978 24.1357 8.74967 23.3307 8.74967H4.3724C3.5674 8.74967 2.91406 8.0978 2.91406 7.29134ZM30.6224 16.0413H4.3724C3.5674 16.0413 2.91406 16.6932 2.91406 17.4997C2.91406 18.3061 3.5674 18.958 4.3724 18.958H30.6224C31.4274 18.958 32.0807 18.3061 32.0807 17.4997C32.0807 16.6932 31.4274 16.0413 30.6224 16.0413ZM17.4974 26.2497H4.3724C3.5674 26.2497 2.91406 26.9016 2.91406 27.708C2.91406 28.5145 3.5674 29.1663 4.3724 29.1663H17.4974C18.3024 29.1663 18.9557 28.5145 18.9557 27.708C18.9557 26.9016 18.3024 26.2497 17.4974 26.2497Z" fill="#000"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Header End -->
+        <!-- SearchBar -->
+        <div class="dz-search-area dz-offcanvas offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                &times;
+            </button>
+            <div class="container">
+                <form class="header-item-search">
+                    <div class="input-group search-input">
+                        <select class="default-select">
+                            <option>All Categories</option>
+                            <option>Headphone</option>
+                            <option>Music Player</option>
+                            <option>Leather jacket</option>
+                            <option>Cap</option>
+                        </select>
+                        <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Search Product">
+                        <button class="btn" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                            <g clip-path="url(#clip0_1362_3437)">
+                                <path d="M16.4562 15.4843L12.4102 11.2762C13.4505 10.0396 14.0205 8.48359 14.0205 6.86374C14.0205 3.07913 10.9413 0 7.15671 0C3.3721 0 0.292969 3.07913 0.292969 6.86374C0.292969 10.6484 3.3721 13.7275 7.15671 13.7275C8.57751 13.7275 9.93145 13.299 11.089 12.4854L15.1658 16.7255C15.3362 16.9024 15.5654 17 15.811 17C16.0435 17 16.264 16.9114 16.4314 16.7502C16.7871 16.4079 16.7985 15.8403 16.4562 15.4843ZM7.15671 1.79054C9.95413 1.79054 12.2299 4.06632 12.2299 6.86374C12.2299 9.66117 9.95413 11.9369 7.15671 11.9369C4.35929 11.9369 2.08351 9.66117 2.08351 6.86374C2.08351 4.06632 4.35929 1.79054 7.15671 1.79054Z" fill="#000"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1362_3437">
+                                <rect width="17" height="17" fill="white"/>
+                                </clipPath>
+                            </defs>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="recent-tag">
+                        <li class="pe-0"><span>Quick Search :</span></li>
+                        <li><a href="{% url 'w3music:shop-cart' %}">Music Player</a></li>
+                        <li><a href="{% url 'w3music:shop-cart' %}">Leather jacket</a></li>
+                        <li><a href="{% url 'w3music:shop-cart' %}">Headphone</a></li>
+                        <li><a href="{% url 'w3music:shop-cart' %}">Cap</a></li>
+                    </ul>
+                </form>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <h5 class="mb-3">You May Also Like</h5>
+                        <div class="swiper category-swiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="shop-card">
+                                        <div class="dz-media">
+                                            <img src="{% static 'w3music/images/shop/product/pic1.png' %}" alt="image">
+                                        </div>
+                                        <div class="dz-content">
+                                            <h6 class="title"><a href="{% url 'w3music:shop-cart' %}">Headphone</a></h6>
+                                            <h6 class="price">$40.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="shop-card">
+                                        <div class="dz-media">
+                                            <img src="{% static 'w3music/images/shop/product/pic2.png' %}" alt="image">
+                                        </div>
+                                        <div class="dz-content">
+                                            <h6 class="title"><a href="{% url 'w3music:shop-cart' %}">Headphone</a></h6>
+                                            <h6 class="price">$30.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="shop-card">
+                                        <div class="dz-media">
+                                            <img src="{% static 'w3music/images/shop/product/pic3.png' %}" alt="image">
+                                        </div>
+                                        <div class="dz-content">
+                                            <h6 class="title"><a href="{% url 'w3music:shop-cart' %}">Music Player</a></h6>
+                                            <h6 class="price">$35.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="shop-card">
+                                        <div class="dz-media">
+                                            <img src="{% static 'w3music/images/shop/product/pic4.png' %}" alt="image">
+                                        </div>
+                                        <div class="dz-content">
+                                            <h6 class="title"><a href="{% url 'w3music:shop-cart' %}">Leather jacket</a></h6>
+                                            <h6 class="price">$20.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="shop-card">
+                                        <div class="dz-media">
+                                            <img src="{% static 'w3music/images/shop/product/pic5.png' %}" alt="image">
+                                        </div>
+                                        <div class="dz-content">
+                                            <h6 class="title"><a href="{% url 'w3music:shop-cart' %}">Headphone</a></h6>
+                                            <h6 class="price">$70.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="shop-card">
+                                        <div class="dz-media">
+                                            <img src="{% static 'w3music/images/shop/product/pic6.png' %}" alt="image">
+                                        </div>
+                                        <div class="dz-content">
+                                            <h6 class="title"><a href="{% url 'w3music:shop-cart' %}">Headphone</a></h6>
+                                            <h6 class="price">$45.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="shop-card">
+                                        <div class="dz-media">
+                                            <img src="{% static 'w3music/images/shop/product/pic7.png' %}" alt="image">	
+                                        </div>
+                                        <div class="dz-content">
+                                            <h6 class="title"><a href="{% url 'w3music:shop-cart' %}">Cap</a></h6>
+                                            <h6 class="price">$40.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="shop-card">
+                                        <div class="dz-media">
+                                            <img src="{% static 'w3music/images/shop/product/pic8.png' %}" alt="image">	
+                                        </div>
+                                        <div class="dz-content">
+                                            <h6 class="title"><a href="{% url 'w3music:shop-cart' %}">Headphone</a></h6>
+                                            <h6 class="price">$60.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SearchBar -->
+    </header>
+
+    <div class="contact-sidebar">
+        <div class="contact-box1 deznav-scroll">
+            <div class="logo-contact logo-header m-0">
+                <a href="{% url 'w3music:index' %}" class="logo-white"><img src="{% static 'w3music/images/logo-white.png' %}" alt="/"></a>
+            </div>
+            <p class="text">The power of music lies not just in a the sounds it produces, but in the emotion it evokes, the memories it triggers</p>
+            <h4 class="dz-title">Contact Us</h4>
+
+            <ul class="contact-address">
+                <li>785 15h Street, Office 478 Berlin, De 81566</li>
+                <li>Demo@gmail.com</li>
+                <li>+1012 3456 789</li>
+            </ul>
+            
+            <h4 class="dz-title">Newsletter</h4>
+            <form class="dzSubscribe dz-subscribe-wrapper1" action="" method="">
+                <div class="dzSubscribeMsg"></div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input name="dzEmail" required="required" type="email" class="form-control" placeholder="Enter Your Email Address">
+                        <div class="input-group-addon ">
+                            <button name="submit" value="Submit" type="submit" class="btn-link">
+                                <i class="la la-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input checkbox-secondary m-r15" type="checkbox" id="contact_check" value="">
+                    <label class="form-check-label" for="contact_check">I Agree To The <span><a href="javascript:void(0)">Privacy Policy</a></span></label>
+                </div>
+            </form>
+            
+            <h4 class="dz-title">Follow Us</h4>
+            <div class="dz-social-icon style-1 dz-hover-move white m-b30">
+                <ul>									
+                    <li style="transform: translate(0px, 0px) scale(1);">
+                        <a target="_blank" href="https://www.facebook.com/dexignzone/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li style="transform: translate(-0.1px, 0px) scale(1);">
+                        <a target="_blank" href="https://twitter.com/dexignzones">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li style="transform: translate(-0.1px, 0px) scale(1);">
+                        <a target="_blank" href="https://www.instagram.com/dexignzone/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li style="transform: translate(0px, -0.1px) scale(1);">
+                        <a target="_blank" href="https://www.youtube.com/channel/UCGL8V6uxNNMRrk3oZfVct1g">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>	
+        <div class="menu-close"><a href="javascript:void(0)">Close <i class="fa-solid fa-xmark"></i></a></div>
+    </div>
