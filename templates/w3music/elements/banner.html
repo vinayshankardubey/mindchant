@@ -1,13 +1,13 @@
 {% load static %}
 
-<div class="dz-bnr-inr style-1 dz-bnr-inr-sm" style="background-image:url('{% static 'w3music/images/banner/bnr10.jpg' %}');">
+<div class="dz-bnr-inr style-1 dz-bnr-inr-sm">
     <div class="container">
         <div class="dz-bnr-inr-entry">
             <h1>{{page_title}}</h1>
             <!-- Breadcrumb Row -->
             <nav aria-label="breadcrumb" class="breadcrumb-row">
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{% url 'w3music:index' %}">Home</a></li>
+                    <li class="breadcrumb-item" style="color:var(--secondary);"><a href="{% url 'w3music:index' %}">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">{{page_title}}</li>
                 </ul>
             </nav>

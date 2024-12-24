@@ -14429,9 +14429,9 @@ a {
 .dz-bnr-inr.style-1 .breadcrumb-row {
   z-index: 1; }
   .dz-bnr-inr.style-1 .breadcrumb-row ul li {
-    color: #fff; }
+    color: var(--secondary); }
     .dz-bnr-inr.style-1 .breadcrumb-row ul li a {
-      color: #fff; }
+      color: var(--secondary); }
   .dz-bnr-inr.style-1 .breadcrumb-row ul .breadcrumb-item + .breadcrumb-item::before {
     color: #fff; }
   @media only screen and (max-width: 991px) {
@@ -32642,4 +32642,8 @@ body .working-location {
 Added Custom*/
 .banner-inner {
     height: 80vh !important;
+}
+
+.dz-bnr-inr.dz-bnr-inr-sm{
+height: 20px !important;
 }
